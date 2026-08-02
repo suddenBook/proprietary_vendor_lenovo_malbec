@@ -1334,13 +1334,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0_vendor \
-    android.hardware.audio.common@5.0_vendor \
     android.hardware.authsecret@1.0_vendor \
     android.hardware.automotive.vehicle@2.0-manager-lib \
     android.hardware.automotive.vehicle@2.0_vendor \
     android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth.audio@2.0_vendor \
-    android.hardware.bluetooth.audio@2.1_vendor \
     android.hardware.bluetooth@1.0_vendor \
     android.hardware.boot@1.0_vendor \
     android.hardware.boot@1.1_vendor \
@@ -1351,16 +1348,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0_vendor \
     android.hardware.graphics.bufferqueue@1.0_vendor \
     android.hardware.graphics.bufferqueue@2.0_vendor \
-    android.hardware.graphics.common@1.0_vendor \
-    android.hardware.graphics.common@1.1_vendor \
-    android.hardware.graphics.common@1.2_vendor \
     android.hardware.graphics.composer@2.1_vendor \
     android.hardware.graphics.composer@2.2_vendor \
     android.hardware.graphics.composer@2.3_vendor \
-    android.hardware.graphics.mapper@2.0_vendor \
-    android.hardware.graphics.mapper@2.1_vendor \
-    android.hardware.graphics.mapper@3.0_vendor \
-    android.hardware.graphics.mapper@4.0_vendor \
     android.hardware.health@1.0_vendor \
     android.hardware.health@2.0_vendor \
     android.hardware.health@2.1_vendor \
@@ -1376,21 +1366,12 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0_vendor \
     android.hardware.power@1.1_vendor \
     android.hardware.power@1.2_vendor \
-    android.hardware.radio@1.0_vendor \
-    android.hardware.radio@1.1_vendor \
     android.hardware.renderscript@1.0_vendor \
-    android.hardware.sensors@1.0_vendor \
-    android.hardware.sensors@2.0-ScopedWakelock_vendor \
-    android.hardware.sensors@2.0_vendor \
-    android.hardware.sensors@2.1_vendor \
     android.hardware.thermal@1.0_vendor \
     android.hardware.thermal@2.0_vendor \
-    android.hardware.usb.gadget@1.0_vendor \
-    android.hardware.usb.gadget@1.1_vendor \
     android.hidl.allocator@1.0_vendor \
     android.hidl.memory.token@1.0_vendor \
     android.hidl.memory@1.0_vendor \
-    android.hidl.safe_union@1.0_vendor \
     android.hidl.token@1.0-utils_vendor \
     android.hidl.token@1.0_vendor \
     android.system.wifi.keystore@1.0_vendor \
@@ -1652,7 +1633,6 @@ PRODUCT_PACKAGES += \
     libTxPwrJni \
     libVoiceSdk \
     libWlanServiceJni \
-    libaconfig_storage_read_api_cc_vendor \
     libadm \
     libadreno_app_profiles \
     libadreno_compiler_cl \
@@ -1665,7 +1645,6 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libaipriv \
     libalsautils_vendor \
-    libalsautilsv2_vendor \
     libandroid_runtime_lazy_vendor \
     libaodoptfeature \
     libapengine \
@@ -1674,16 +1653,12 @@ PRODUCT_PACKAGES += \
     libarcsoft_face_mink \
     libarcsoft_faceid \
     libarmemlog \
-    libaudio_aidl_conversion_common_ndk_vendor \
     libaudio_log_utils \
-    libaudioaidlcommon_vendor \
-    libaudioroute_vendor \
     libavservices_minijail_vendor \
     libbacklight-calib \
     libbase64 \
     libbatching \
     libbcinfo_vendor \
-    libbinderdebug_vendor \
     libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
@@ -1695,7 +1670,6 @@ PRODUCT_PACKAGES += \
     libbt-hidlclient \
     libbtnv \
     libcacertclient \
-    libcamera_metadata_vendor \
     libcamerapoweroptfeature \
     libcamxcommonutils \
     libcamxcoreutils \
@@ -1732,7 +1706,6 @@ PRODUCT_PACKAGES += \
     libchilog \
     libchinodeevautils \
     libchinodehmeutils \
-    libclang_rt.ubsan_standalone-aarch64-android \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
     libclstc_tm \
@@ -1774,7 +1747,6 @@ PRODUCT_PACKAGES += \
     libdisplayskuutils \
     libdlbdsservice \
     libdlbpreg \
-    libdmabufheap_vendor \
     libdmap_consent_sdk \
     libdmshal \
     libdolbyclstc \
@@ -1784,7 +1756,6 @@ PRODUCT_PACKAGES += \
     libdolbyproxyandroid \
     libdpp_manager \
     libdpps \
-    libdrm_vendor \
     libdrmfs \
     libdrmtime \
     libdsd2pcm \
@@ -1793,21 +1764,17 @@ PRODUCT_PACKAGES += \
     libeai_fixed \
     libeai_float \
     libeepromcutter \
-    libeffectsconfig_vendor \
     libembmsservice \
     libengineplugin \
     libeva \
     libeva_util \
     libexif_vendor \
-    libexpat_vendor \
     libeye_tracking_dsp_sample_stub \
     libfaceid_ca_proxy.arcsoft \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
-    libflatbuffers-cpp_vendor \
-    libfmq_vendor \
     libgame_enhance \
     libgamepoweroptfeature \
     libgatekeeper_vendor \
@@ -1818,11 +1785,8 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     libgpt \
     libgpudataproducer \
-    libgralloctypes_vendor \
     libgsl \
     libhalide_hexagon_host \
-    libhardware_vendor \
-    libhardware_legacy_vendor \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
@@ -1841,7 +1805,6 @@ PRODUCT_PACKAGES += \
     libiccprofile \
     libidl \
     libintervmipc \
-    libion_vendor \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -1853,7 +1816,6 @@ PRODUCT_PACKAGES += \
     libjnihelper \
     libjpege \
     libjson \
-    libjsoncpp_vendor \
     libkcl \
     libkcl_a730 \
     libkernelmanager \
@@ -1897,14 +1859,11 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblzma_vendor \
     libmapdata_api \
     libmcs \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
-    libmedia_helper_vendor \
-    libmediautils_vendor_vendor \
     libmemperfd \
     libmemunreachable_vendor \
     libmemutils \
@@ -1934,7 +1893,6 @@ PRODUCT_PACKAGES += \
     libnative-api \
     libnbaio_mono \
     libnetfilter_conntrack \
-    libnetutils_vendor \
     libnfnetlink \
     libnicm \
     libnicm_dsi \
@@ -1986,9 +1944,7 @@ PRODUCT_PACKAGES += \
     libperfioctl \
     libperipheral_client \
     libplatformconfig \
-    libpng_vendor \
     libpolygon \
-    libpower_vendor \
     libpowercallback \
     libpowercore \
     libprefapps \
@@ -1996,8 +1952,6 @@ PRODUCT_PACKAGES += \
     libprocomp \
     libproj_qmot_tracker \
     libproj_sot \
-    libprotobuf-cpp-full-21.12 \
-    libprotobuf-cpp-lite-21.12 \
     libpsi_vendor \
     libpsmoptfeature \
     libptq_uint8 \
@@ -2176,7 +2130,6 @@ PRODUCT_PACKAGES += \
     libsoc_helper_jni \
     libspcom \
     libspectre \
-    libspeexresampler_vendor \
     libspl \
     libsqlite_vendor \
     libsrc_jni_getPasrService \
@@ -2185,7 +2138,6 @@ PRODUCT_PACKAGES += \
     libstagefright_aidl_bufferpool2_vendor \
     libstagefright_bufferpool@2.0.1_vendor \
     libstagefright_bufferqueue_helper_vendor \
-    libstagefright_foundation_vendor \
     libstagefrighthw \
     libstandbyfeature \
     libstcMotoColor \
@@ -2208,10 +2160,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
-    libtinyalsa_vendor \
-    libtinyalsav2_vendor \
     libtinycompress \
-    libtinyxml2_vendor \
     libtinyxml2_1 \
     libtlpd \
     libtlpd_configmgr \
@@ -2223,10 +2172,8 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libubwcp \
     libui_vendor \
-    libunwindstack_vendor \
     libusbhost_vendor \
     libuwb-aidlclient \
-    libvibratorutils_vendor \
     libvideoml \
     libvideooptfeature \
     libvideotxr \
@@ -2266,13 +2213,11 @@ PRODUCT_PACKAGES += \
     libwfduibcsrcinterface_vendor \
     libwfdutils_proprietary \
     libwifi-hal \
-    libwifi-system-iface_vendor \
     libwifiobserver \
     libwms \
     libwpa_client \
     libwqe \
     libxml \
-    libxml2_vendor \
     libxpan_wifi_hal \
     libxrcommconnection \
     libxrcommcoreutils \
@@ -2344,7 +2289,6 @@ PRODUCT_PACKAGES += \
     libvpt_action_recognition \
     libworker_pool \
     sensors.qsh \
-    server_configurable_flags_vendor \
     libbundleaidl \
     libdlbvolaidl \
     libdownmixaidl \
@@ -2375,7 +2319,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.7_vendor \
     vendor.display.config@1.8_vendor \
     vendor.display.config@1.9_vendor \
-    vendor.display.config@2.0_vendor \
     vendor.display.postproc@1.0 \
     vendor.dolby.dms-V1-ndk \
     vendor.dolby.hardware.dms@2.0 \
@@ -2445,12 +2388,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@1.0_vendor \
     vendor.qti.hardware.display.mapper@1.1_vendor \
     vendor.qti.hardware.display.mapper@2.0_vendor \
-    vendor.qti.hardware.display.mapper@3.0_vendor \
-    vendor.qti.hardware.display.mapper@4.0_vendor \
-    vendor.qti.hardware.display.mapperextensions@1.0_vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1_vendor \
-    vendor.qti.hardware.display.mapperextensions@1.2_vendor \
-    vendor.qti.hardware.display.mapperextensions@1.3_vendor \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.embmsslaidl-V2-ndk \
@@ -2751,12 +2688,10 @@ PRODUCT_PACKAGES += \
     ar_util_in_test_example \
     athdiag \
     aw882xx_cali \
-    boringssl_self_test64 \
     btconfig \
     btftmdaemon \
     ccid_daemon_nr \
     cdsprpcd \
-    checkpoint_gc \
     cnd \
     cnss-daemon \
     cnss_cli \
@@ -2778,7 +2713,6 @@ PRODUCT_PACKAGES += \
     dppdaemon \
     drm_sample_app \
     dspservice \
-    dumpsys \
     e_loop \
     edgnss-daemon \
     engine-service \
@@ -3020,8 +2954,6 @@ PRODUCT_PACKAGES += \
     wfdservice64
 
 PRODUCT_PACKAGES += \
-    vendor_etc_boringssl_self_test_no_zygote_rc \
-    vendor_etc_boringssl_self_test_zygote32_rc \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
