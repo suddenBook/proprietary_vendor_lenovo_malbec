@@ -1,0 +1,10 @@
+<!--
+    Input:
+        lenovo/lgsi/drvonly/interfaces_impl/misc/service/vendor.lenovo.hardware.misc-service.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.lenovo.hardware.misc</name>
+        <fqname>IMisc/default</fqname>
+    </hal>
+</manifest>

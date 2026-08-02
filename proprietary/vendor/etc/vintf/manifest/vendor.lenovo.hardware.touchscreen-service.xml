@@ -1,0 +1,11 @@
+<!--
+    Input:
+        lenovo/lgsi/drvonly/interfaces_impl/touchscreen/service/vendor.lenovo.hardware.touchscreen-service.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.lenovo.hardware.touchscreen</name>
+        <version>5</version>
+        <fqname>ITouchscreen/default</fqname>
+    </hal>
+</manifest>

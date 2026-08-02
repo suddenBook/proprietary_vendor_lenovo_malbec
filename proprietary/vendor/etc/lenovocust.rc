@@ -1,0 +1,11 @@
+ #Need to do re-adapted different Platforms
+on early-init
+    mkdir /lenovocust 0777 system system
+on fs
+    wait /dev/block/bootdevice/by-name/lenovocust
+    mount ext4 /dev/block/by-name/lenovocust /lenovocust noatime nosuid nodev barrier=1
+    restorecon_recursive /lenovocust
+
+on post-fs-data
+    chown system system /lenovocust
+    chmod 777 /lenovocust

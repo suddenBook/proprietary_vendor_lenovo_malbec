@@ -1,0 +1,326 @@
+
+# Copyright (c) 2019-2021, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022, 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted (subject to the limitations in the
+# disclaimer below) provided that the following conditions are met:
+#
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#
+#     * Neither the name of Qualcomm Innovation Center, Inc. nor the names of
+#       its contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+# GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+# HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+# GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+import /vendor/etc/init/hw/init.qti.kernel.rc
+
+on early-init
+    write /proc/sys/kernel/printk_devkmsg ratelimited
+    export MEMTAG_OPTIONS off
+
+on init
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+    chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+    start logd
+
+on early-fs
+    start vold
+
+on early-init
+    setprop sys.storage.dynamicdata.type userdata
+
+on fs && property:sys.storage.dynamicdata.type=userdata
+    write /dev/kmsg "<1>dynamicdata==> mount early with userdata start"
+    mount_all /vendor/etc/fstab.qcom --early
+    chown root system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist
+    mkdir /mnt/vendor/persist/secnvm 0770 system system
+    mkdir /mnt/vendor/persist/data 0700 system system
+    write /dev/kmsg "<1>dynamicdata==> mount early with userdata end"
+
+on fs && property:sys.storage.dynamicdata.type=dmuserdata
+    write /dev/kmsg "<1>dynamicdata==> mount early with dmuserdata start"
+    mount_all /vendor/etc/fstab.qcom.dm --early
+    chown root system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist
+    mkdir /mnt/vendor/persist/secnvm 0770 system system
+    mkdir /mnt/vendor/persist/data 0700 system system
+    write /dev/kmsg "<1>dynamicdata==> mount early with dmuserdata end"
+
+on late-fs && property:sys.storage.dynamicdata.type=userdata
+    write /dev/kmsg "<1>dynamicdata==> mount late with userdata start"
+    #exec_start wait_for_keymaster
+    mount_all /vendor/etc/fstab.qcom --late
+    write /dev/kmsg "<1>dynamicdata==> mount late with userdata end"
+
+on late-fs && property:sys.storage.dynamicdata.type=dmuserdata
+    write /dev/kmsg "<1>dynamicdata==> mount late with dmuserdata start"
+    #exec_start wait_for_keymaster
+    mount_all /vendor/etc/fstab.qcom.dm --late
+    write /dev/kmsg "<1>dynamicdata==> mount late with dmuserdata end"
+
+on post-fs
+    chown system system /sys/devices/system/cpu/cpu0/thermal/control
+    chmod 666 /sys/devices/system/cpu/cpu0/thermal/control
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+    chmod 666 /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+    #Execute virtualization manager
+    on property:ro.vendor.vm.ssr.enable=
+        enable vendor.qvirtservice_rs
+        start  vendor.qvirtservice_rs
+    on property:ro.vendor.vm.ssr.enable=false
+        enable vendor.qvirtservice_rs
+        start  vendor.qvirtservice_rs
+    on property:ro.vendor.vm.ssr.enable=true
+        enable vendor.qvirtservice_rs
+        start  vendor.qvirtservice_rs
+        enable vendor.qvirtvendorservice
+        start  vendor.qvirtvendorservice
+
+on post-fs-data
+    mkdir /vendor/data/tombstones 0771 system system
+    # Enable WLAN cold boot calibration
+    write /sys/kernel/cnss/fs_ready 1
+    chown system system /sys/devices/platform/product-device-info/info_gsensor
+    chown system system /sys/devices/platform/product-device-info/info_gyro
+    chown system system /sys/devices/platform/product-device-info/info_lsensor
+    chown system system /sys/devices/platform/product-device-info/info_sar
+    chown system system /sys/devices/platform/product-device-info/info_hall
+    #RGB dump text
+    mkdir /data/goodix_sensor 0771 system system
+    mkdir /data/goodix_sensor/data 0771 system system
+    mkdir /data/goodix_sensor/cali 0771 system system
+    mkdir /data/goodix_sensor/product_test 0771 system system
+
+    # Audio add for smartpa calibration
+    mkdir /mnt/vendor/persist/factory
+    mkdir /mnt/vendor/persist/factory/audio
+    chmod 0777 mnt/vendor/persist/factory/audio
+    chmod 0664 mnt/vendor/persist/factory/audio/aw_cali.bin
+    chown system system mnt/vendor/persist/factory/audio/aw_cali.bin
+    chmod 0777 /dev/aw882xx_smartpa
+
+on early-boot
+    setprop ro.surface_flinger.supports_background_blur ${vendor.display.supports_background_blur}
+    verity_update_state
+
+on boot
+    write /dev/cpuset/audio-app/cpus 0-7
+    # Add a cpuset for the camera daemon
+    # We want all cores for camera
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
+    chmod 0660 /dev/cpuset/camera-daemon/tasks
+    chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
+    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
+    chown system /sys/devices/platform/soc/990000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
+    chmod 0660 /sys/devices/platform/soc/990000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
+    chown system /sys/devices/system/cpu/hyp_core_ctl/enable
+    chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
+
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    chmod 0777 /dev/block/sda1
+    chmod 0666 /sys/class/power_supply/battery/battery_used
+    chmod 0666 /sys/module/oem_bm_adsp_ulog/parameters/debug_enabled
+
+    chmod 0666 /sys/class/backlight/panel0-backlight/hbm
+    chmod 0666 /sys/devices/platform/soc/af54000.qcom,dp_display/prefer_mode
+    # Add shipping mode
+    chown system system /sys/class/qcom-battery/ship_mode_en
+    chmod 0666 /sys/class/qcom-battery/ship_mode_en
+
+on property:sys.boot_completed=1
+    mkdir /mnt/vendor/logfs 0644 system system
+    mount vfat /dev/block/by-name/logfs /mnt/vendor/logfs rw wait noatime
+
+on property:vendor.display.lcd_density=560
+   setprop dalvik.vm.heapgrowthlimit 256m
+
+on property:vendor.display.lcd_density=640
+   setprop dalvik.vm.heapgrowthlimit 256m
+
+on init && property:ro.boot.mode=charger
+    wait_for_prop vendor.all.modules.ready 1
+    mount_all /vendor/etc/charger_fw_fstab.qti --early
+
+on charger
+    start vendor.power_off_alarm
+    write /sys/kernel/cnss/charger_mode 1
+
+on property:sys.boot_completed=1
+    chmod 0444 /dev/lenovo_penraw
+
+#service vendor.lowi /vendor/bin/sscrpcd
+#   class core
+#   user system
+#   group system wakelock
+#   capabilities BLOCK_SUSPEND
+
+#pd-mapper
+service vendor.pd_mapper /vendor/bin/pd-mapper
+    class core
+    user system
+    group system
+
+#Peripheral manager
+service vendor.per_mgr /vendor/bin/pm-service
+    class core
+    user system
+    group system
+    ioprio rt 4
+
+service vendor.per_proxy /vendor/bin/pm-proxy
+    class core
+    user system
+    group system
+    disabled
+
+#service vendor.mdm_helper /vendor/bin/mdm_helper
+#    class core
+#    group system wakelock
+#    disabled
+
+service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
+    class core
+    oneshot
+
+on property:init.svc.vendor.per_mgr=running
+    start vendor.per_proxy
+
+on property:sys.shutdown.requested=*
+    write /sys/kernel/qcom_rproc/shutdown_in_progress 1
+    stop vendor.per_proxy
+
+on property:vold.decrypt=trigger_restart_framework
+   start vendor.cnss_diag
+
+# MALBECW-689: set property persist.vendor.lgsi.adbdebug
+on property:ro.boot.lgsi.adbdebug=*
+    setprop persist.vendor.lgsi.adbdebug ${ro.boot.lgsi.adbdebug}
+
+# TN modified by ji.yang/860665 20251009 CR/MALBECW-547, 20260108 CR/MALBECW-12469
+# TN modified by luxj5/860715 20260207 CR/MALBECW-16467
+on property:ro.boot.lgsi.adbdebug=1
+    setprop sys.usb.config adb
+    setprop persist.sys.usb.config adb
+
+# MALBECW-1701
+on property:ro.odm.fingerprint.update=*
+    setprop ro.vendor.build.fingerprint ${ro.odm.fingerprint.update}
+    setprop ro.system.build.fingerprint ${ro.odm.fingerprint.update}
+    setprop ro.product.build.fingerprint ${ro.odm.fingerprint.update}
+    setprop ro.odm.build.fingerprint ${ro.odm.fingerprint.update}
+    setprop ro.bootimage.build.fingerprint ${ro.odm.fingerprint.update}
+
+on property:ro.odm.product.name.update=*
+    setprop ro.product.name ${ro.odm.product.name.update}
+    setprop ro.product.odm.name ${ro.odm.product.name.update}
+    setprop ro.product.product.name ${ro.odm.product.name.update}
+    setprop ro.product.system.name ${ro.odm.product.name.update}
+    setprop ro.product.system_dlkm.name ${ro.odm.product.name.update}
+    setprop ro.product.system_ext.name ${ro.odm.product.name.update}
+    setprop ro.product.vendor.name ${ro.odm.product.name.update}
+    setprop ro.product.vendor_dlkm.name ${ro.odm.product.name.update}
+
+service check_keymaster /vendor/bin/check_keymaster
+    class main
+    user system
+    group system
+    oneshot
+    disabled
+    seclabel u:r:check_keymaster:s0
+
+on property:sys.boot_completed=1 && property:init.svc.vendor.keymint-qti=running
+    start check_keymaster
+
+on property:sys.boot_completed=0
+    stop check_keymaster
+
+on property:persist.vendor.keymaster.ready=FALSE
+    setprop ro.odm.lenovo.attestationkey 0
+
+on property:persist.vendor.keymaster.ready=TRUE
+    setprop ro.odm.lenovo.attestationkey 1
+
+on property:sys.RemotelyProvisionedKey.fetch.complete=1
+    setprop ro.odm.lenovo.attestationkey ${sys.RemotelyProvisionedKey.fetch.complete}
+
+service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
+   class main
+   user system
+   group system wifi inet sdcard_rw media_rw diag
+   oneshot
+
+on early-boot && property:persist.vendor.pcie.boot_option=*
+    write /sys/bus/platform/devices/1c00000.qcom,pcie/debug/boot_option ${persist.vendor.pcie.boot_option}
+    write /sys/bus/platform/devices/1c08000.qcom,pcie/debug/boot_option ${persist.vendor.pcie.boot_option}

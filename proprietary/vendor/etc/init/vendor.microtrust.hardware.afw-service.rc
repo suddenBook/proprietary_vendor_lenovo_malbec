@@ -1,0 +1,11 @@
+on post-fs
+    chmod 0660 /dev/afw
+
+on load_persist_props_action
+    mkdir /data/vendor/afw
+    chmod 0770 /data/vendor/afw
+
+service afw /vendor/bin/hw/vendor.microtrust.hardware.afw-service
+    class hal
+    user root
+    group root

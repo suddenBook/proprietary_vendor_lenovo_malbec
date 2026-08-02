@@ -1,0 +1,13 @@
+#wifisar
+# Start wifi sar reduction modified by  dong.zhang 20240221 Do not delete when resolving conflicts please
+on property:persist.sys.sar=*
+    start wifisar
+
+service wifisar /vendor/bin/wifisar.sh
+    class main
+    user root
+    group root
+    disabled
+    oneshot
+
+# End wifi sar reduction modified by  dong.zhang 20240221 Do not delete when resolving conflicts please

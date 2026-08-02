@@ -1,0 +1,27 @@
+#Camera Log
+logInfoMask=0
+logWarningMask=0
+logConfigMask=0
+logVerboseMask=0
+logCoreCfgMask=0
+logRequestMapping=FALSE
+systemLogEnable=TRUE
+overrideLogLevels=0xff
+enableSynxCrossNodePropagation=FALSE
+EISV2Enable=0
+EISV3Enable=0
+numPCRsBeforeStreamOn=1
+enableTouchToTrack=0
+enableAsciiLogging=0
+enableBinaryLogging=0
+offlineLoggerEnableBackupLog=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+chiLogWarningMask=0
+chiLogCoreCfgMask=0
+enableHealthMonitor=FALSE
+enableDMEbasedMCTF=1
+enableEGLCache=TRUE
+# halBufferCacheMax
+halBufferCacheMax=8
+enableNCSService=FALSE

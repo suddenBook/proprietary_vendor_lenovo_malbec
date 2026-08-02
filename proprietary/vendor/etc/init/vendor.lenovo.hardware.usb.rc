@@ -1,0 +1,16 @@
+on post-fs-data
+   chown system system /sys/class/hub/whitelist_cmd
+   chmod 0666 /sys/class/hub/whitelist_clean
+   chown system system /sys/class/hub/whitelist_pid
+   chmod 0666 /sys/class/hub/whitelist_pid
+   chown system system /sys/class/hub/whitelist_vid
+   chmod 0666 /sys/class/hub/whitelist_vid
+   mkdir /data/vendor/usb
+   chown system system /data/vendor/usb
+   chmod 0770 /data/vendor/usb
+
+service usb_hal_service /vendor/bin/hw/vendor.lenovo.hardware.usb-service
+    interface aidl vendor.lenovo.hardware.usb.IUsb/default
+    class hal
+    user system
+    group system

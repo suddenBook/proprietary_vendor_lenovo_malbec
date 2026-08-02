@@ -1,0 +1,7 @@
+service lenovo.hardware.ai-service /vendor/bin/lenovo.hardware.ai-service
+        interface aidl lenovo.hardware.ai.IDevice/default
+        class hal
+        user system
+        group system
+        task_profiles HighPerformance
+        priority -20

@@ -1,0 +1,7 @@
+<MotoStcConfigs>
+    <config id="panelList" description="Supported Panel List">
+        <prim>boe_nt36536e_144hz_vid</prim>
+        <prim>csot_nt36536_144hz_vid</prim>
+        <prim>csot_af_nt36536_144hz_vid</prim>
+    </config>
+</MotoStcConfigs>

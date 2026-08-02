@@ -1,0 +1,10 @@
+<!--
+    Input:
+        lenovo/lgsi/drvonly/interfaces_impl/performance/service/vendor.lenovo.hardware.performance-service.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.lenovo.hardware.performance</name>
+        <fqname>IPerformance/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,11 @@
+<!--
+    Input:
+        lenovo/lgsi/drvonly/interfaces_impl/usb/service/vendor.lenovo.hardware.usb.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.lenovo.hardware.usb</name>
+        <version>2</version>
+        <fqname>IUsb/default</fqname>
+    </hal>
+</manifest>

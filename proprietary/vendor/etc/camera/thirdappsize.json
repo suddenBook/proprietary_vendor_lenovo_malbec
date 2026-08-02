@@ -1,0 +1,62 @@
+{
+   "twitter" : { "previewSize": [{"width": 2048,"height": 1536}, {"width": 1920,"height": 1440}, {"width": 1920,"height": 1080}],
+				 "captureSize": [{"width": 2592,"height": 1944}, {"width": 2560,"height": 1440}, {"width": 1920,"height": 1080}, {"width": 640,"height": 480}],
+	             "videoSize":   []
+               },
+
+   "tiktok" : { "previewSize": [{"width": 1920,"height": 1080}, {"width": 1440,"height": 1080}, {"width": 640,"height": 480}, {"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                  "captureSize": [{"width": 1920,"height": 1080}],
+                  "videoSize":   []
+                    },
+
+   "facebook" : { "previewSize": [{"width": 3840,"height": 2160}, {"width": 3264,"height": 2040}, {"width": 1920,"height": 1440}, {"width": 1920,"height": 1080}, {"width": 320,"height": 244}, {"width": 176,"height": 146}],
+                  "captureSize": [{"width": 3840,"height": 2160}, {"width": 3264,"height": 2040}, {"width": 320,"height": 244}, {"width": 176,"height": 146}],
+                  "videoSize": [{"width": 1920,"height": 1080}, {"width": 320,"height": 244}, {"width": 176,"height": 146}]
+                    },
+
+   "snapchat" : { "previewSize": [{"width": 1600,"height": 900}, {"width": 1280,"height": 720}, {"width": 960,"height": 720}, {"width": 960,"height": 540}, {"width": 720,"height": 480}, {"width": 704,"height": 704}, {"width": 1600,"height": 720}, {"width": 640,"height": 480}, {"width": 352,"height": 288}, {"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                  "captureSize": [{"width": 1600,"height": 900}, {"width": 1920,"height": 1080}, {"width": 1280,"height": 720}, {"width": 960,"height": 720}, {"width": 960,"height": 540}, {"width": 720,"height": 480}, {"width": 704,"height": 704}, {"width": 1600,"height": 720}, {"width": 640,"height": 480}, {"width": 352,"height": 288}, {"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                  "videoSize":   [{"width": 1920,"height": 1080}, {"width": 1280,"height": 720}, {"width": 960,"height": 720}, {"width": 960,"height": 540}, {"width": 720,"height": 480}, {"width": 704,"height": 704}, {"width": 1600,"height": 720}, {"width": 640,"height": 480}, {"width": 352,"height": 288}, {"width": 320,"height": 240}, {"width": 176,"height": 144}]
+                    },
+
+   "instagram" : { "previewSize": [{"width": 1920,"height": 1080}, {"width": 1440,"height": 1080}, {"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                   "captureSize": [],
+                   "videoSize":   []
+                    },
+
+   "whatsapp" : { "previewSize": [{"width": 1920,"height": 1080}, {"width": 1440,"height": 1080}, {"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                  "captureSize": [],
+                  "videoSize":   []
+                    },
+
+   "wechat" : { "previewSize": [{"width": 1920,"height": 1080},{"width": 1600,"height": 1200},{"width": 1440,"height": 1080}, {"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                  "captureSize": [{"width": 1920,"height": 1080},{"width": 1600,"height": 1200},{"width": 1440,"height": 1080}, {"width": 320,"height": 240},{"width": 176,"height": 144}],
+                  "videoSize":   [{"width": 1920,"height": 1080},{"width": 1600,"height": 1200},{"width": 1440,"height": 1080}, {"width": 320,"height": 240},{"width": 176,"height": 144}]
+                    },
+
+    "qq" :     { "previewSize": [{"width": 4208,"height": 3120}, {"width": 3264,"height": 2448}, {"width": 2880,"height": 2160}, {"width": 1920,"height": 1440}, {"width": 1280,"height": 720}],
+                    "captureSize": [{"width": 4160,"height": 3120}, {"width": 3264,"height": 2448}, {"width": 2880,"height": 2160}, {"width": 1920,"height": 1440}, {"width": 1280,"height": 720}],
+                    "videoSize":   [{"width": 3264,"height": 2448}, {"width": 1280,"height": 720}]
+                      },
+
+   "googlequicksearchbox" : { "previewSize": [{"width": 1920,"height": 1440}],
+                  "captureSize": [],
+                  "videoSize":   []
+                    },
+
+   "jingdong" : { "previewSize": [{"width": 1920,"height": 1440}],
+                  "captureSize": [],
+                  "videoSize":   []
+                    },
+
+   "ExP AppNameX" : { "previewSize": [{"width": 1280,"height": 720}, {"width": 960,"height": 720},{"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                      "captureSize": [{"width": 1280,"height": 720}, {"width": 960,"height": 720},{"width": 320,"height": 240}, {"width": 176,"height": 144}],
+                      "videoSize":   [{"width": 1280,"height": 720}, {"width": 960,"height": 720},{"width": 320,"height": 240}, {"width": 176,"height": 144}]
+                    },
+
+   "ExP AppNameY" : { "previewSize": [],
+                      "captureSize": [],
+                      "videoSize":   []
+                    }
+}
+

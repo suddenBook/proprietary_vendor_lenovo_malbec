@@ -1,0 +1,9 @@
+service prop_init /vendor/bin/prop_init
+    class core
+    user root
+    group system radio wifi audio bluetooth media
+    oneshot
+    disabled
+
+on boot
+    start prop_init

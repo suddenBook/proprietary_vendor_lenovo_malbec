@@ -1,0 +1,19 @@
+
+on early-init
+   setprop vendor.tn.performance 0
+
+service tn_performance /vendor/bin/sh /vendor/bin/tn_vendor_performance.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+	
+on property:sys.boot_completed=1
+   setprop vendor.tn.performance 1  
+   
+on property:vendor.tn.performance=1
+   start tn_performance       
+   
+
+
