@@ -55,28 +55,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/btaudio_offload_if.so",
             ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "libbluetooth_audio_session_aidl_qti",
-                "libbluetooth_audio_session_qti",
-                "libbluetooth_audio_session_qti_2_1",
-                "vendor.qti.hardware.bluetooth.audio-V1-ndk",
-                "android.hardware.bluetooth.audio-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6240,25 +6222,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/ftm_fm_lib.so",
             ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "libbinder",
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "vendor.qti.hardware.fm-V1-ndk",
-                "vendor.qti.hardware.fm@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6274,22 +6241,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so",
             ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libbluetooth_audio_session_aidl_qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -6306,31 +6261,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so",
             ],
-            shared_libs: [
-                "android.hardware.audio.core-V4-ndk",
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "libbluetooth_audio_session_qti",
-                "libbluetooth_audio_session_aidl_qti",
-                "android.hardware.bluetooth.audio-impl-qti",
-                "libaudioserviceexampleimpl",
-                "libaudioutils",
-                "libaudioaidlcommon",
-                "libbinder_ndk",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -6414,37 +6348,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so",
             ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libdiag",
-                "libqmiservices",
-                "libqmi_cci",
-                "libbtnv",
-                "android.hardware.bluetooth@1.0",
-                "libsoc_helper",
-                "libssl",
-                "mbedtls_qti",
-                "libcrypto",
-                "libbinder_ndk",
-                "android.hardware.thermal@2.0",
-                "android.hardware.thermal-V1-ndk",
-                "libminksocket_vendor",
-                "libPeripheralStateUtils",
-                "libxpan_wifi_hal",
-                "vendor.qti.hardware.bluetooth.xpanprovider-V1-ndk",
-                "vendor.qti.hardware.bluetooth.xpanprovider-impl-qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -6499,20 +6406,64 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so",
             ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.r_submix.default_vendor",
+    stem: "audio.r_submix.default",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/audio.r_submix.default.so",
+            ],
             shared_libs: [
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "libbluetooth_audio_session_qti_2_1",
-                "libbluetooth_audio_session_qti",
-                "libbluetooth_audio_session_aidl_qti",
-                "android.hardware.bluetooth.audio-impl-qti",
-                "libaudioutils",
-                "libbinder_ndk",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
                 "liblog",
+                "libcutils",
+                "libmedia_helper",
+                "libnbaio_mono_vendor",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.usb.default_vendor",
+    stem: "audio.usb.default",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/audio.usb.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libaudioutils",
+                "libtinyalsa",
+                "libalsautils_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -6766,6 +6717,69 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudiocorehal.default_vendor",
+    stem: "libaudiocorehal.default",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libaudiocorehal.default.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocorehal.qti_vendor",
+    stem: "libaudiocorehal.qti",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libaudiocorehal.qti.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudioeffecthal.qti_vendor",
+    stem: "libaudioeffecthal.qti",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libaudioeffecthal.qti.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqtigatekeeper",
     owner: "lenovo",
     strip: {
@@ -6795,6 +6809,27 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsoundtriggerhal.qti_vendor",
+    stem: "libsoundtriggerhal.qti",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libsoundtriggerhal.qti.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -8309,6 +8344,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libPeripheralStateUtils_vendor",
+    stem: "libPeripheralStateUtils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libPeripheralStateUtils.so",
+            ],
+            shared_libs: [
+                "libminksocket_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbase",
+                "libminkdescriptor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libQSEEComAPI",
     owner: "lenovo",
     strip: {
@@ -8521,6 +8587,104 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libqcrilNrLogger",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRSCpuRef_vendor",
+    stem: "libRSCpuRef",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libRSCpuRef.so",
+            ],
+            shared_libs: [
+                "libRS_internal_vendor",
+                "liblog",
+                "libz",
+                "libbcinfo_vendor",
+                "libblas_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRSDriver_vendor",
+    stem: "libRSDriver",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libRSDriver.so",
+            ],
+            shared_libs: [
+                "libRS_internal_vendor",
+                "libRSCpuRef_vendor",
+                "liblog",
+                "libEGL",
+                "libGLESv1_CM",
+                "libGLESv2",
+                "libnativewindow",
+                "libbcinfo_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRS_internal_vendor",
+    stem: "libRS_internal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libRS_internal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutilscallstack",
+                "libutils",
+                "libEGL",
+                "libGLESv1_CM",
+                "libGLESv2",
+                "libnativewindow",
+                "libft2",
+                "libbcinfo_vendor",
+                "libmediandk",
                 "libc++",
                 "libc",
                 "libm",
@@ -8788,6 +8952,87 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "lib_bt_aptx_vendor",
+    stem: "lib_bt_aptx",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_bt_aptx.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_bt_ble_vendor",
+    stem: "lib_bt_ble",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_bt_ble.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_bt_bundle_vendor",
+    stem: "lib_bt_bundle",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_bt_bundle.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libadm",
     owner: "lenovo",
     strip: {
@@ -8984,6 +9229,205 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libagm_vendor",
+    stem: "libagm",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagm.so",
+            ],
+            shared_libs: [
+                "libar-gsl_vendor",
+                "liblog",
+                "liblx-osal_vendor",
+                "libaudioroute_vendor",
+                "libats_vendor",
+                "libarmemlog",
+                "libcutils",
+                "libtinyalsa",
+                "libaudio_log_utils",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagm_compress_plugin_vendor",
+    stem: "libagm_compress_plugin",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagm_compress_plugin.so",
+            ],
+            shared_libs: [
+                "libsndcardparser_vendor",
+                "libagmclient_vendor",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudio_log_utils",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagm_mixer_plugin_vendor",
+    stem: "libagm_mixer_plugin",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagm_mixer_plugin.so",
+            ],
+            shared_libs: [
+                "libsndcardparser_vendor",
+                "libagmclient_vendor",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libtinyalsa",
+                "libaudio_log_utils",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagm_pcm_plugin_vendor",
+    stem: "libagm_pcm_plugin",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagm_pcm_plugin.so",
+            ],
+            shared_libs: [
+                "libsndcardparser_vendor",
+                "libagmclient_vendor",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libaudio_log_utils",
+                "libexpat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagmclient_vendor",
+    stem: "libagmclient",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagmclient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libutils",
+                "vendor.qti.hardware.agm-V1-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libagmipcservice_vendor",
+    stem: "libagmipcservice",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libagmipcservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder_ndk",
+                "libbase",
+                "libcutils",
+                "libutils",
+                "libar-gsl_vendor",
+                "libagm_vendor",
+                "vendor.qti.hardware.agm-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libagmmixer",
     owner: "lenovo",
     strip: {
@@ -9109,6 +9553,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libalsautils_vendor",
+    stem: "libalsautils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libalsautils.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaodoptfeature",
     owner: "lenovo",
     strip: {
@@ -9202,6 +9675,128 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblearningmodule",
                 "libsqlite",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-acdb_vendor",
+    stem: "libar-acdb",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-acdb.so",
+            ],
+            shared_libs: [
+                "liblx-osal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-gpr_vendor",
+    stem: "libar-gpr",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-gpr.so",
+            ],
+            shared_libs: [
+                "liblx-osal_vendor",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-gsl_vendor",
+    stem: "libar-gsl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-gsl.so",
+            ],
+            shared_libs: [
+                "liblx-osal_vendor",
+                "libar-acdb_vendor",
+                "liblx-ar_util_vendor",
+                "libar-gpr_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libar-pal_vendor",
+    stem: "libar-pal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libar-pal.so",
+            ],
+            shared_libs: [
+                "libar-gsl_vendor",
+                "liblog",
+                "libexpat",
+                "liblx-osal_vendor",
+                "libaudioroute_vendor",
+                "libcutils",
+                "libutilscallstack",
+                "libagmclient_vendor",
+                "libvui_intf_vendor",
+                "libarmemlog",
+                "libhidlbase",
+                "libPeripheralStateUtils_vendor",
+                "libtinyalsa",
+                "libtinycompress",
                 "libc++",
                 "libc",
                 "libm",
@@ -9314,10 +9909,33 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libarmemlog.so",
             ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libats_vendor",
+    stem: "libats",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libats.so",
+            ],
             shared_libs: [
-                "liblog",
-                "libexpat",
-                "liblx-osal",
+                "liblx-osal_vendor",
+                "libutils",
+                "libcutils",
+                "libdiag",
+                "libar-gsl_vendor",
+                "libar-acdb_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -9346,6 +9964,63 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libexpat",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiochargerlistener_vendor",
+    stem: "libaudiochargerlistener",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudiochargerlistener.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudioroute_vendor",
+    stem: "libaudioroute",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudioroute.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libexpat",
+                "liblog",
+                "libutils",
+                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -9429,6 +10104,52 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libloc_core_vendor",
                 "libgps.utils_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbatterylistener_vendor",
+    stem: "libbatterylistener",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbatterylistener.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbcinfo_vendor",
+    stem: "libbcinfo",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbcinfo.so",
+            ],
+            shared_libs: [
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -9528,6 +10249,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libblas_vendor",
+    stem: "libblas",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libblas.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_qti",
     owner: "lenovo",
     strip: {
@@ -9538,27 +10284,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libbluetooth_audio_session_aidl_qti.so",
             ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "libhidlbase",
-                "libxml2",
-                "libflatbuffers-cpp",
-                "server_configurable_flags",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -9670,25 +10399,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libbt-hidlclient.so",
             ],
-            shared_libs: [
-                "libutils",
-                "libhidlbase",
-                "com.dsi.ant@1.0",
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "vendor.qti.hardware.fm-V1-ndk",
-                "liblog",
-                "libcutils",
-                "libbinder",
-                "libbinder_ndk",
-                "android.hardware.bluetooth-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -11331,6 +12045,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcompiler_rt_vendor",
+    stem: "libcompiler_rt",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcompiler_rt.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libconfigdb",
     owner: "lenovo",
     strip: {
@@ -11397,6 +12136,34 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcrypto_data.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcustomva_intf_vendor",
+    stem: "libcustomva_intf",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcustomva_intf.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "liblx-osal_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -12614,6 +13381,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libfmpal_vendor",
+    stem: "libfmpal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libfmpal.so",
+            ],
+            shared_libs: [
+                "libaudioroute_vendor",
+                "libbase",
+                "liblog",
+                "libaudioutils",
+                "libcutils",
+                "libexpat",
+                "libar-pal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libgame_enhance",
     owner: "lenovo",
     strip: {
@@ -13134,6 +13933,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhfp_pal_vendor",
+    stem: "libhfp_pal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhfp_pal.so",
+            ],
+            shared_libs: [
+                "libaudioroute_vendor",
+                "libbase",
+                "liblog",
+                "libaudioutils",
+                "libcutils",
+                "libexpat",
+                "libar-pal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhme",
     owner: "lenovo",
     strip: {
@@ -13162,6 +13993,34 @@ cc_prebuilt_library_shared {
                 "libqti_vndfwk_detect",
                 "libcdsprpc",
                 "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhotword_intf_vendor",
+    stem: "libhotword_intf",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhotword_intf.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "liblx-osal_vendor",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -14883,6 +15742,64 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liblx-ar_util_vendor",
+    stem: "liblx-ar_util",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblx-ar_util.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "liblx-osal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblx-osal_vendor",
+    stem: "liblx-osal",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblx-osal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdiag",
+                "libion",
+                "libpdmapper",
+                "libpdnotifier",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmapdata_api",
     owner: "lenovo",
     strip: {
@@ -14924,24 +15841,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libmcs.so",
             ],
-            shared_libs: [
-                "libagm",
-                "libaudioroute",
-                "libar-acdb",
-                "liblog",
-                "libcutils",
-                "libats",
-                "libexpat",
-                "liblx-osal",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -15816,6 +16719,35 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libminksocket_vendor",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnbaio_mono_vendor",
+    stem: "libnbaio_mono",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnbaio_mono.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -16997,6 +17929,90 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpalclient_vendor",
+    stem: "libpalclient",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpalclient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "vendor.qti.hardware.pal-V1-ndk",
+                "libfmq",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpaleventnotifier_vendor",
+    stem: "libpaleventnotifier",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpaleventnotifier.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpalipcservice_vendor",
+    stem: "libpalipcservice",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpalipcservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder_ndk",
+                "libbase",
+                "libcutils",
+                "libutils",
+                "libfmq",
+                "libar-pal_vendor",
+                "vendor.qti.hardware.pal-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libpasrutils",
     owner: "lenovo",
     strip: {
@@ -17678,22 +18694,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libqasr.so",
             ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "vendor.qti.hardware.qasr-V2-ndk",
-                "libar-pal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -17830,25 +18834,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libqc2audio_hwaudiocodec.so",
             ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libqc2audio_base",
-                "libqc2audio_platform",
-                "libqc2audio_utils",
-                "libqc2audio_basecodec",
-                "libcodec2_vndk",
-                "libstagefright_foundation",
-                "libpalclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -20804,22 +21793,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libqtigefar.so",
             ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libar-pal",
-                "android.media.audio.common.types-V4-ndk",
-                "android.hardware.audio.core-V4-ndk",
-                "libbase",
-                "libaudioplatformconverter.qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -21217,55 +22194,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libqvrservice.so",
             ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libnativewindow",
-                "libjsoncpp",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.allocator@4.0",
-                "libhidlbase",
-                "libhardware",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.1",
-                "libdmabufheap",
-                "libgralloccore",
-                "libgrallocutils",
-                "libmapperutils",
-                "libsync",
-                "libvndksupport",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@3.0",
-                "libbinder_ndk",
-                "libdisplayconfig.qti",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libbase",
-                "vendor.qti.hardware.qxr-V2-ndk",
-                "libdrm",
-                "libui",
-                "android.hardware.thermal@1.0",
-                "android.hardware.thermal-V1-ndk",
-                "libusbhost",
-                "android.hardware.audio.core-V4-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "android.hardware.common-V2-ndk",
-                "libfmq",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -22408,6 +23340,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsndcardparser_vendor",
+    stem: "libsndcardparser",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsndcardparser.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsns_device_mode_stub",
     owner: "lenovo",
     strip: {
@@ -22883,6 +23842,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstagefright_bufferqueue_helper_vendor",
+    stem: "libstagefright_bufferqueue_helper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hidl.token@1.0-utils",
+                "libEGL",
+                "libnativewindow",
+                "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstagefrighthw_vendor",
     stem: "libstagefrighthw",
     owner: "lenovo",
@@ -23128,34 +24126,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libsxrservice.so",
             ],
-            shared_libs: [
-                "libcutils",
-                "libui",
-                "liblog",
-                "libutils",
-                "libEGL",
-                "libGLESv2",
-                "libusbhost",
-                "libnativewindow",
-                "libhidlbase",
-                "libhidltransport",
-                "libfmq",
-                "libbinder_ndk",
-                "libbase",
-                "qti-audio-types-aidl-V1-ndk",
-                "android.hardware.audio.core-V4-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "android.hardware.common-V2-ndk_platform",
-                "libtinyalsa",
-                "qti.video.utils.videobufferlayout",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23966,6 +24940,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvndfwk_detect_jni.qti_vendor",
+    stem: "libvndfwk_detect_jni.qti",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so",
+            ],
+            shared_libs: [
+                "libqti_vndfwk_detect",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvppclient",
     owner: "lenovo",
     strip: {
@@ -24214,6 +25217,34 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvui_intf_vendor",
+    stem: "libvui_intf",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvui_intf.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "liblx-osal_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -24476,41 +25507,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libwfdmmsrc_proprietary.so",
             ],
-            shared_libs: [
-                "qti-audio-types-aidl-V1-ndk",
-                "libbinder",
-                "libmmosal_vendor",
-                "liblog",
-                "libutils",
-                "libmmrtpencoder_vendor",
-                "libFileMux_proprietary",
-                "libcutils",
-                "libtinyalsa",
-                "libwfdcommonutils_proprietary",
-                "libwfdutils_proprietary",
-                "libwfdconfigutils_proprietary",
-                "libwfdaac_vendor",
-                "libpng",
-                "libwfdmminterface_proprietary",
-                "libwfdcodecv4l2_proprietary",
-                "libwfdmmservice_proprietary",
-                "libhidlbase",
-                "android.hardware.common.fmq-V1-ndk",
-                "libbinder_ndk",
-                "libbase",
-                "libfmq",
-                "android.hardware.audio.core-V4-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "qti.video.utils.videobufferlayout",
-                "android.hardware.graphics.mapper@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -26912,6 +27912,27 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbundleaidl_vendor",
+    stem: "libbundleaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libbundleaidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdlbvolaidl",
     owner: "lenovo",
     strip: {
@@ -26922,29 +27943,136 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/soundfx/libdlbvolaidl.so",
             ],
-            shared_libs: [
-                "libstagefright_foundation",
-                "libdlbpreg",
-                "android.hardware.audio.effect-V3-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdownmixaidl_vendor",
+    stem: "libdownmixaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libdownmixaidl.so",
             ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdynamicsprocessingaidl_vendor",
+    stem: "libdynamicsprocessingaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libdynamicsprocessingaidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libloudnessenhanceraidl_vendor",
+    stem: "libloudnessenhanceraidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libloudnessenhanceraidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcompostprocbundle_vendor",
+    stem: "libqcompostprocbundle",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcomvisualizer_vendor",
+    stem: "libqcomvisualizer",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libqcomvisualizer.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcomvoiceprocessing_vendor",
+    stem: "libqcomvoiceprocessing",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libqcomvoiceprocessing.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -26961,27 +28089,31 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/soundfx/libquasar.so",
             ],
-            shared_libs: [
-                "android.hardware.audio.effect-V3-ndk",
-                "android.hardware.common-V2-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "libutils",
-                "libaudioutils",
-                "liblog",
-                "libtinyxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libreverbaidl_vendor",
+    stem: "libreverbaidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libreverbaidl.so",
             ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -26998,32 +28130,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/soundfx/libswdapaidl.so",
             ],
-            shared_libs: [
-                "android.hardware.audio.effect-V3-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudio_aidl_conversion_common_ndk",
-                "libstagefright_foundation",
-                "libdapparamstorage",
-                "libdlbpreg",
-                "libdmshal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -27040,32 +28150,52 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/soundfx/libswgamedapaidl.so",
             ],
-            shared_libs: [
-                "libdapparamstorage",
-                "libstagefright_foundation",
-                "libdlbpreg",
-                "libdmshal",
-                "android.hardware.audio.effect-V3-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudio_aidl_conversion_common_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvisualizeraidl_vendor",
+    stem: "libvisualizeraidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libvisualizeraidl.so",
             ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvolumelistener_vendor",
+    stem: "libvolumelistener",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libvolumelistener.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -30932,6 +32062,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.vibratorCL.impl_vendor",
+    stem: "vendor.qti.hardware.vibratorCL.impl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.vibratorCL.impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.vibrator-V2-ndk",
+                "libbinder_ndk",
+                "liblog",
+                "libpalclient_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.vpp-V1-ndk",
     owner: "lenovo",
     strip: {
@@ -33799,6 +34958,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "face-default.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/face-default.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "lenovo.hardware.ai-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/lenovo.hardware.ai-service.xml",
@@ -33811,6 +34979,15 @@ prebuilt_etc_xml {
     name: "manifest_afw.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_afw.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_audio_qti_services.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_audio_qti_services.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -33835,9 +35012,27 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "memtrack_qti.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/memtrack_qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "mwqem-saidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/mwqem-saidl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "power.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/power.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -33892,6 +35087,15 @@ prebuilt_etc_xml {
     name: "snapdragon_services.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/snapdragon_services.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "soundtrigger.qti.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/soundtrigger.qti.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -34195,6 +35399,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.qti.hardware.vibrator.service.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.qti.hardware.vpp-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp-service.xml",
@@ -34458,16 +35671,10 @@ cc_prebuilt_binary {
             srcs: [
                 "proprietary/vendor/bin/PalTest",
             ],
-            shared_libs: [
-                "libpalclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -34864,18 +36071,10 @@ cc_prebuilt_binary {
             srcs: [
                 "proprietary/vendor/bin/ar_util_in_test_example",
             ],
-            shared_libs: [
-                "liblog",
-                "liblx-ar_util",
-                "liblx-osal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -38573,22 +39772,10 @@ cc_prebuilt_binary {
             srcs: [
                 "proprietary/vendor/bin/mcs_test",
             ],
-            shared_libs: [
-                "libaudioroute",
-                "liblog",
-                "libats",
-                "libar-acdb",
-                "liblx-osal",
-                "libmcs",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -40011,6 +41198,33 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "rkp_factory_extraction_tool64",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/rkp_factory_extraction_tool64",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libcrypto",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "rmt_storage",
     owner: "lenovo",
     target: {
@@ -41411,30 +42625,10 @@ cc_prebuilt_binary {
             srcs: [
                 "proprietary/vendor/bin/wfdhdcphalservice",
             ],
-            shared_libs: [
-                "libc++",
-                "libbinder",
-                "libbinder_ndk",
-                "libcrypto",
-                "libbase",
-                "liblog",
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "libutils",
-                "libcutils",
-                "libwfdhdcpcp",
-                "libwfdhdcpservice_proprietary",
-                "libwfdcommonutils_proprietary",
-                "libwfdutils_proprietary",
-                "libavservices_minijail",
-                "libwfddisplayconfig_vendor",
-                "android.hardware.drm-V2-ndk",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
