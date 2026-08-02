@@ -1678,7 +1678,6 @@ PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libaudioaidlcommon_vendor \
     libaudioroute_vendor \
-    libaudioutils_vendor \
     libavservices_minijail_vendor \
     libbacklight-calib \
     libbase64 \
