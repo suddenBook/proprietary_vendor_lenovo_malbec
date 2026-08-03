@@ -6416,68 +6416,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.r_submix.default_vendor",
-    stem: "audio.r_submix.default",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libnbaio_mono_vendor",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.usb.default_vendor",
-    stem: "audio.usb.default",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.usb.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libtinyalsa",
-                "libalsautils_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libQnnHtp_audio",
     stem: "libQnnHtp",
     owner: "lenovo",
@@ -6717,8 +6655,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiocorehal.default_vendor",
-    stem: "libaudiocorehal.default",
+    name: "libaudiocorehal.default",
     owner: "lenovo",
     strip: {
         none: true,
@@ -6738,8 +6675,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiocorehal.qti_vendor",
-    stem: "libaudiocorehal.qti",
+    name: "libaudiocorehal.qti",
     owner: "lenovo",
     strip: {
         none: true,
@@ -6759,8 +6695,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioeffecthal.qti_vendor",
-    stem: "libaudioeffecthal.qti",
+    name: "libaudioeffecthal.qti",
     owner: "lenovo",
     strip: {
         none: true,
@@ -6815,8 +6750,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsoundtriggerhal.qti_vendor",
-    stem: "libsoundtriggerhal.qti",
+    name: "libsoundtriggerhal.qti",
     owner: "lenovo",
     strip: {
         none: true,
@@ -8262,8 +8196,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libOmxCore_vendor",
-    stem: "libOmxCore",
+    name: "libOmxCore",
     owner: "lenovo",
     strip: {
         none: true,
@@ -8276,7 +8209,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libplatformconfig_vendor",
+                "libplatformconfig",
                 "libc++",
                 "libc",
                 "libm",
@@ -8290,8 +8223,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libOpenCL_vendor",
-    stem: "libOpenCL",
+    name: "libOpenCL",
     owner: "lenovo",
     strip: {
         none: true,
@@ -8344,8 +8276,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libPeripheralStateUtils_vendor",
-    stem: "libPeripheralStateUtils",
+    name: "libPeripheralStateUtils",
     owner: "lenovo",
     strip: {
         none: true,
@@ -8587,104 +8518,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libqcrilNrLogger",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libRSCpuRef_vendor",
-    stem: "libRSCpuRef",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libRSCpuRef.so",
-            ],
-            shared_libs: [
-                "libRS_internal_vendor",
-                "liblog",
-                "libz",
-                "libbcinfo_vendor",
-                "libblas_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libRSDriver_vendor",
-    stem: "libRSDriver",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libRSDriver.so",
-            ],
-            shared_libs: [
-                "libRS_internal_vendor",
-                "libRSCpuRef_vendor",
-                "liblog",
-                "libEGL",
-                "libGLESv1_CM",
-                "libGLESv2",
-                "libnativewindow",
-                "libbcinfo_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libRS_internal_vendor",
-    stem: "libRS_internal",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libRS_internal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutilscallstack",
-                "libutils",
-                "libEGL",
-                "libGLESv1_CM",
-                "libGLESv2",
-                "libnativewindow",
-                "libft2",
-                "libbcinfo_vendor",
-                "libmediandk",
                 "libc++",
                 "libc",
                 "libm",
@@ -8952,8 +8785,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib_bt_aptx_vendor",
-    stem: "lib_bt_aptx",
+    name: "lib_bt_aptx",
     owner: "lenovo",
     strip: {
         none: true,
@@ -8979,8 +8811,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib_bt_ble_vendor",
-    stem: "lib_bt_ble",
+    name: "lib_bt_ble",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9006,8 +8837,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib_bt_bundle_vendor",
-    stem: "lib_bt_bundle",
+    name: "lib_bt_bundle",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9229,8 +9059,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagm_vendor",
-    stem: "libagm",
+    name: "libagm",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9241,11 +9070,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libagm.so",
             ],
             shared_libs: [
-                "libar-gsl_vendor",
+                "libar-gsl",
                 "liblog",
-                "liblx-osal_vendor",
-                "libaudioroute_vendor",
-                "libats_vendor",
+                "liblx-osal",
+                "libaudioroute",
+                "libats",
                 "libarmemlog",
                 "libcutils",
                 "libtinyalsa",
@@ -9264,8 +9093,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagm_compress_plugin_vendor",
-    stem: "libagm_compress_plugin",
+    name: "libagm_compress_plugin",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9276,8 +9104,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libagm_compress_plugin.so",
             ],
             shared_libs: [
-                "libsndcardparser_vendor",
-                "libagmclient_vendor",
+                "libsndcardparser",
+                "libagmclient",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -9298,8 +9126,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagm_mixer_plugin_vendor",
-    stem: "libagm_mixer_plugin",
+    name: "libagm_mixer_plugin",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9310,8 +9137,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libagm_mixer_plugin.so",
             ],
             shared_libs: [
-                "libsndcardparser_vendor",
-                "libagmclient_vendor",
+                "libsndcardparser",
+                "libagmclient",
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -9331,8 +9158,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagm_pcm_plugin_vendor",
-    stem: "libagm_pcm_plugin",
+    name: "libagm_pcm_plugin",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9343,8 +9169,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libagm_pcm_plugin.so",
             ],
             shared_libs: [
-                "libsndcardparser_vendor",
-                "libagmclient_vendor",
+                "libsndcardparser",
+                "libagmclient",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -9364,8 +9190,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagmclient_vendor",
-    stem: "libagmclient",
+    name: "libagmclient",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9395,8 +9220,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagmipcservice_vendor",
-    stem: "libagmipcservice",
+    name: "libagmipcservice",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9412,8 +9236,8 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcutils",
                 "libutils",
-                "libar-gsl_vendor",
-                "libagm_vendor",
+                "libar-gsl",
+                "libagm",
                 "vendor.qti.hardware.agm-V1-ndk",
                 "libc++",
                 "libc",
@@ -9553,35 +9377,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libalsautils_vendor",
-    stem: "libalsautils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libalsautils.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaodoptfeature",
     owner: "lenovo",
     strip: {
@@ -9688,8 +9483,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libar-acdb_vendor",
-    stem: "libar-acdb",
+    name: "libar-acdb",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9700,7 +9494,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libar-acdb.so",
             ],
             shared_libs: [
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libc++",
                 "libc",
                 "libm",
@@ -9714,8 +9508,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libar-gpr_vendor",
-    stem: "libar-gpr",
+    name: "libar-gpr",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9726,7 +9519,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libar-gpr.so",
             ],
             shared_libs: [
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libcutils",
                 "liblog",
                 "libc++",
@@ -9742,8 +9535,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libar-gsl_vendor",
-    stem: "libar-gsl",
+    name: "libar-gsl",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9754,10 +9546,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libar-gsl.so",
             ],
             shared_libs: [
-                "liblx-osal_vendor",
-                "libar-acdb_vendor",
-                "liblx-ar_util_vendor",
-                "libar-gpr_vendor",
+                "liblx-osal",
+                "libar-acdb",
+                "liblx-ar_util",
+                "libar-gpr",
                 "libc++",
                 "libc",
                 "libm",
@@ -9771,8 +9563,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libar-pal_vendor",
-    stem: "libar-pal",
+    name: "libar-pal",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9783,18 +9574,18 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libar-pal.so",
             ],
             shared_libs: [
-                "libar-gsl_vendor",
+                "libar-gsl",
                 "liblog",
                 "libexpat",
-                "liblx-osal_vendor",
-                "libaudioroute_vendor",
+                "liblx-osal",
+                "libaudioroute",
                 "libcutils",
                 "libutilscallstack",
-                "libagmclient_vendor",
-                "libvui_intf_vendor",
+                "libagmclient",
+                "libvui_intf",
                 "libarmemlog",
                 "libhidlbase",
-                "libPeripheralStateUtils_vendor",
+                "libPeripheralStateUtils",
                 "libtinyalsa",
                 "libtinycompress",
                 "libc++",
@@ -9918,8 +9709,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libats_vendor",
-    stem: "libats",
+    name: "libats",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9930,12 +9720,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libats.so",
             ],
             shared_libs: [
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libutils",
                 "libcutils",
                 "libdiag",
-                "libar-gsl_vendor",
-                "libar-acdb_vendor",
+                "libar-gsl",
+                "libar-acdb",
                 "libc++",
                 "libc",
                 "libm",
@@ -9977,8 +9767,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiochargerlistener_vendor",
-    stem: "libaudiochargerlistener",
+    name: "libaudiochargerlistener",
     owner: "lenovo",
     strip: {
         none: true,
@@ -9991,36 +9780,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioroute_vendor",
-    stem: "libaudioroute",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioroute.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libexpat",
-                "liblog",
-                "libutils",
-                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -10087,8 +9846,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbatching_vendor",
-    stem: "libbatching",
+    name: "libbatching",
     owner: "lenovo",
     strip: {
         none: true,
@@ -10102,8 +9860,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libc++",
                 "libc",
                 "libm",
@@ -10117,8 +9875,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbatterylistener_vendor",
-    stem: "libbatterylistener",
+    name: "libbatterylistener",
     owner: "lenovo",
     strip: {
         none: true,
@@ -10132,32 +9889,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbcinfo_vendor",
-    stem: "libbcinfo",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbcinfo.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -10236,31 +9967,6 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libcdsprpc",
                 "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libblas_vendor",
-    stem: "libblas",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libblas.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -11311,7 +11017,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcdfw.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -11337,7 +11043,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcdfw_remote_api.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -12045,31 +11751,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcompiler_rt_vendor",
-    stem: "libcompiler_rt",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcompiler_rt.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libconfigdb",
     owner: "lenovo",
     strip: {
@@ -12149,8 +11830,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcustomva_intf_vendor",
-    stem: "libcustomva_intf",
+    name: "libcustomva_intf",
     owner: "lenovo",
     strip: {
         none: true,
@@ -12163,7 +11843,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libc++",
                 "libc",
                 "libm",
@@ -12242,9 +11922,9 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
-                "libloc_core_vendor",
+                "libloc_core",
                 "libloc_base_util",
                 "libc++",
                 "libc",
@@ -13138,7 +12818,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libengineplugin.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libcutils",
                 "libdiag",
                 "libz",
@@ -13381,8 +13061,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfmpal_vendor",
-    stem: "libfmpal",
+    name: "libfmpal",
     owner: "lenovo",
     strip: {
         none: true,
@@ -13393,13 +13072,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libfmpal.so",
             ],
             shared_libs: [
-                "libaudioroute_vendor",
+                "libaudioroute",
                 "libbase",
                 "liblog",
                 "libaudioutils",
                 "libcutils",
                 "libexpat",
-                "libar-pal_vendor",
+                "libar-pal",
                 "libc++",
                 "libc",
                 "libm",
@@ -13492,9 +13171,9 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
-                "libloc_core_vendor",
+                "libloc_core",
                 "libizat_core",
                 "liblbs_core",
                 "libc++",
@@ -13510,8 +13189,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgeofencing_vendor",
-    stem: "libgeofencing",
+    name: "libgeofencing",
     owner: "lenovo",
     strip: {
         none: true,
@@ -13524,9 +13202,9 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
-                "libloc_core_vendor",
+                "libloc_core",
                 "libc++",
                 "libc",
                 "libm",
@@ -13540,8 +13218,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgnss_vendor",
-    stem: "libgnss",
+    name: "libgnss",
     owner: "lenovo",
     strip: {
         none: true,
@@ -13555,8 +13232,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libxml2",
                 "libloc_base_util",
                 "libc++",
@@ -13585,7 +13262,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -13600,8 +13277,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgps.utils_vendor",
-    stem: "libgps.utils",
+    name: "libgps.utils",
     owner: "lenovo",
     strip: {
         none: true,
@@ -13933,8 +13609,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhfp_pal_vendor",
-    stem: "libhfp_pal",
+    name: "libhfp_pal",
     owner: "lenovo",
     strip: {
         none: true,
@@ -13945,13 +13620,13 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libhfp_pal.so",
             ],
             shared_libs: [
-                "libaudioroute_vendor",
+                "libaudioroute",
                 "libbase",
                 "liblog",
                 "libaudioutils",
                 "libcutils",
                 "libexpat",
-                "libar-pal_vendor",
+                "libar-pal",
                 "libc++",
                 "libc",
                 "libm",
@@ -14005,8 +13680,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhotword_intf_vendor",
-    stem: "libhotword_intf",
+    name: "libhotword_intf",
     owner: "lenovo",
     strip: {
         none: true,
@@ -14019,7 +13693,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libc++",
                 "libc",
                 "libm",
@@ -14200,7 +13874,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libdisplaydebug",
-                "libqrtr_vendor",
+                "libqrtr",
                 "libc++",
                 "libc",
                 "libm",
@@ -14382,7 +14056,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "libc++",
@@ -14411,8 +14085,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libloc_api_v02",
                 "libloc_util",
                 "libloc_base_util",
@@ -14420,7 +14094,7 @@ cc_prebuilt_library_shared {
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "libwifiobserver",
                 "libizat_client_api",
-                "liblocation_api_vendor",
+                "liblocation_api",
                 "liblowi_common",
                 "libbinder_ndk",
                 "libcrypto",
@@ -14740,8 +14414,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libizat_core",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libcrypto",
                 "libsqlite",
                 "libloc_base_util",
@@ -15121,8 +14795,8 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libqmi_cci",
                 "libqmi_common_so",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -15148,12 +14822,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libloc_api_wds.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libidl",
                 "libcutils",
                 "liblog",
                 "libutils",
-                "liblocation_api_vendor",
+                "liblocation_api",
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libc++",
@@ -15196,8 +14870,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libloc_core_vendor",
-    stem: "libloc_core",
+    name: "libloc_core",
     owner: "lenovo",
     strip: {
         none: true,
@@ -15210,7 +14883,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -15236,7 +14909,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libloc_eng_hub.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libizat_core",
                 "libgnsspps",
@@ -15245,7 +14918,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libloc_util",
                 "libcdfw",
-                "libloc_core_vendor",
+                "libloc_core",
                 "libc++",
                 "libc",
                 "libm",
@@ -15273,7 +14946,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "liblog",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libc++",
                 "libm",
@@ -15301,7 +14974,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libqcbor",
                 "libminksocket_vendor",
                 "libc++",
@@ -15331,7 +15004,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libc++",
                 "libc",
                 "libm",
@@ -15359,7 +15032,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "android.frameworks.location.altitude-V2-ndk",
                 "libbinder_ndk",
                 "libc++",
@@ -15375,8 +15048,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liblocation_api_vendor",
-    stem: "liblocation_api",
+    name: "liblocation_api",
     owner: "lenovo",
     strip: {
         none: true,
@@ -15389,7 +15061,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -15415,7 +15087,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/liblocation_api_msg.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "libc++",
@@ -15442,7 +15114,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/liblocation_client_api.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblocation_api_msg",
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "liblog",
@@ -15470,7 +15142,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/liblocation_integration_api.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblocation_api_msg",
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "liblog",
@@ -15500,11 +15172,11 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libcdfw",
                 "liblog",
-                "liblocation_api_vendor",
-                "libloc_core_vendor",
+                "liblocation_api",
+                "libloc_core",
                 "libloc_mq_client",
                 "libloc_base_util",
                 "libc++",
@@ -15533,13 +15205,13 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "liblbs_core",
                 "libdataitems",
                 "liblowi_client",
                 "libizat_core",
-                "liblocation_api_vendor",
+                "liblocation_api",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "liblowi_common",
@@ -15571,12 +15243,12 @@ cc_prebuilt_library_shared {
                 "liblocationservice",
                 "libcutils",
                 "liblog",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libhardware_legacy",
                 "liblbs_core",
                 "libdataitems",
-                "liblocation_api_vendor",
+                "liblocation_api",
                 "libutils",
                 "libc++",
                 "libc",
@@ -15602,7 +15274,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/liblocdiagiface.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libcutils",
                 "libdiag",
                 "liblog",
@@ -15634,7 +15306,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "liblowi_common",
@@ -15692,7 +15364,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "liblowi_common",
@@ -15742,8 +15414,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liblx-ar_util_vendor",
-    stem: "liblx-ar_util",
+    name: "liblx-ar_util",
     owner: "lenovo",
     strip: {
         none: true,
@@ -15755,7 +15426,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libc++",
                 "libc",
                 "libm",
@@ -15769,8 +15440,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liblx-osal_vendor",
-    stem: "liblx-osal",
+    name: "liblx-osal",
     owner: "lenovo",
     strip: {
         none: true,
@@ -15812,8 +15482,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libizat_client_api",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -15981,8 +15651,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmemutils_vendor",
-    stem: "libmemutils",
+    name: "libmemutils",
     owner: "lenovo",
     strip: {
         none: true,
@@ -16201,7 +15870,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libqrtr_vendor",
+                "libqrtr",
                 "libvmmem",
                 "libc++",
                 "libc",
@@ -16305,8 +15974,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmm-omxcore_vendor",
-    stem: "libmm-omxcore",
+    name: "libmm-omxcore",
     owner: "lenovo",
     strip: {
         none: true,
@@ -16319,7 +15987,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libplatformconfig_vendor",
+                "libplatformconfig",
                 "libc++",
                 "libc",
                 "libm",
@@ -16399,7 +16067,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libcdsprpc",
-                "libOpenCL_vendor",
+                "libOpenCL",
                 "libbitmlenginev2",
                 "libc",
                 "libm",
@@ -16719,35 +16387,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libminksocket_vendor",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnbaio_mono_vendor",
-    stem: "libnbaio_mono",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnbaio_mono.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -17911,7 +17550,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libandroid_net",
                 "libcrypto",
@@ -17929,8 +17568,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpalclient_vendor",
-    stem: "libpalclient",
+    name: "libpalclient",
     owner: "lenovo",
     strip: {
         none: true,
@@ -17960,8 +17598,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpaleventnotifier_vendor",
-    stem: "libpaleventnotifier",
+    name: "libpaleventnotifier",
     owner: "lenovo",
     strip: {
         none: true,
@@ -17980,8 +17617,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpalipcservice_vendor",
-    stem: "libpalipcservice",
+    name: "libpalipcservice",
     owner: "lenovo",
     strip: {
         none: true,
@@ -17998,7 +17634,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libfmq",
-                "libar-pal_vendor",
+                "libar-pal",
                 "vendor.qti.hardware.pal-V1-ndk",
                 "libc++",
                 "libc",
@@ -18241,8 +17877,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libplatformconfig_vendor",
-    stem: "libplatformconfig",
+    name: "libplatformconfig",
     owner: "lenovo",
     strip: {
         none: true,
@@ -18282,7 +17917,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -21071,8 +20706,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqrtr_vendor",
-    stem: "libqrtr",
+    name: "libqrtr",
     owner: "lenovo",
     strip: {
         none: true,
@@ -21111,7 +20745,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libdisplaydebug",
-                "libqrtr_vendor",
+                "libqrtr",
                 "libsdmutils",
                 "libc++",
                 "libc",
@@ -21501,8 +21135,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqti-perfd-client_vendor",
-    stem: "libqti-perfd-client",
+    name: "libqti-perfd-client",
     owner: "lenovo",
     strip: {
         none: true,
@@ -21558,7 +21191,7 @@ cc_prebuilt_library_shared {
                 "libperfioctl",
                 "libbinder_ndk",
                 "vendor.qti.hardware.display.config-V12-ndk",
-                "libqti-perfd-client_vendor",
+                "libqti-perfd-client",
                 "libc++",
                 "libc",
                 "libm",
@@ -22872,7 +22505,7 @@ cc_prebuilt_library_shared {
                 "libsdmdal",
                 "libsdedrm",
                 "libutils",
-                "libmemutils_vendor",
+                "libmemutils",
                 "libvmfilexfer",
                 "libintervmipc",
                 "libdrm",
@@ -22881,7 +22514,7 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libcutils",
                 "libminksocket_vendor",
-                "libqrtr_vendor",
+                "libqrtr",
                 "android.hardware.thermal-V1-ndk",
                 "libbinder",
                 "libbinder_ndk",
@@ -23232,7 +22865,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libqmi_cci",
                 "libqmi_common_so",
@@ -23340,8 +22973,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsndcardparser_vendor",
-    stem: "libsndcardparser",
+    name: "libsndcardparser",
     owner: "lenovo",
     strip: {
         none: true,
@@ -23842,47 +23474,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_bufferqueue_helper_vendor",
-    stem: "libstagefright_bufferqueue_helper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hidl.token@1.0-utils",
-                "libEGL",
-                "libnativewindow",
-                "libvndksupport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefrighthw_vendor",
-    stem: "libstagefrighthw",
+    name: "libstagefrighthw",
     owner: "lenovo",
     strip: {
         none: true,
@@ -24180,8 +23772,8 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libqmi_cci",
                 "libqmi_common_so",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -24236,8 +23828,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
-                "libloc_core_vendor",
+                "libgps.utils",
+                "libloc_core",
                 "liblog",
                 "libc++",
                 "libc",
@@ -24925,37 +24517,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libdisplaydebug",
-                "libqrtr_vendor",
-                "libmemutils_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvndfwk_detect_jni.qti_vendor",
-    stem: "libvndfwk_detect_jni.qti",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so",
-            ],
-            shared_libs: [
-                "libqti_vndfwk_detect",
-                "libcutils",
-                "libutils",
-                "liblog",
+                "libqrtr",
+                "libmemutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -25230,8 +24793,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvui_intf_vendor",
-    stem: "libvui_intf",
+    name: "libvui_intf",
     owner: "lenovo",
     strip: {
         none: true,
@@ -25244,7 +24806,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "liblx-osal_vendor",
+                "liblx-osal",
                 "libc++",
                 "libc",
                 "libm",
@@ -25878,11 +25440,11 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libloc_core_vendor",
-                "libgps.utils_vendor",
+                "libloc_core",
+                "libgps.utils",
                 "libdataitems",
                 "liblowi_client",
-                "liblocation_api_vendor",
+                "liblocation_api",
                 "libloc_base_util",
                 "liblowi_common",
                 "libc++",
@@ -26510,9 +26072,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libxtadapter.so",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
-                "libloc_core_vendor",
+                "libloc_core",
                 "libizat_core",
                 "libc++",
                 "libc",
@@ -27912,27 +27474,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbundleaidl_vendor",
-    stem: "libbundleaidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libbundleaidl.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdlbvolaidl",
     owner: "lenovo",
     strip: {
@@ -27953,71 +27494,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdownmixaidl_vendor",
-    stem: "libdownmixaidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libdownmixaidl.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdynamicsprocessingaidl_vendor",
-    stem: "libdynamicsprocessingaidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libdynamicsprocessingaidl.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libloudnessenhanceraidl_vendor",
-    stem: "libloudnessenhanceraidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libloudnessenhanceraidl.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqcompostprocbundle_vendor",
-    stem: "libqcompostprocbundle",
+    name: "libqcompostprocbundle",
     owner: "lenovo",
     strip: {
         none: true,
@@ -28037,8 +27514,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcomvisualizer_vendor",
-    stem: "libqcomvisualizer",
+    name: "libqcomvisualizer",
     owner: "lenovo",
     strip: {
         none: true,
@@ -28058,8 +27534,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcomvoiceprocessing_vendor",
-    stem: "libqcomvoiceprocessing",
+    name: "libqcomvoiceprocessing",
     owner: "lenovo",
     strip: {
         none: true,
@@ -28088,27 +27563,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/soundfx/libquasar.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libreverbaidl_vendor",
-    stem: "libreverbaidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libreverbaidl.so",
             ],
         },
     },
@@ -28160,29 +27614,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvisualizeraidl_vendor",
-    stem: "libvisualizeraidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libvisualizeraidl.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvolumelistener_vendor",
-    stem: "libvolumelistener",
+    name: "libvolumelistener",
     owner: "lenovo",
     strip: {
         none: true,
@@ -32062,35 +31494,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vibratorCL.impl_vendor",
-    stem: "vendor.qti.hardware.vibratorCL.impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.vibratorCL.impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.vibrator-V2-ndk",
-                "libbinder_ndk",
-                "liblog",
-                "libpalclient_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.vpp-V1-ndk",
     owner: "lenovo",
     strip: {
@@ -34958,15 +34361,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "face-default.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/face-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "lenovo.hardware.ai-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/lenovo.hardware.ai-service.xml",
@@ -34979,15 +34373,6 @@ prebuilt_etc_xml {
     name: "manifest_afw.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_afw.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_audio_qti_services.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_audio_qti_services.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -35012,27 +34397,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "memtrack_qti.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/memtrack_qti.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "mwqem-saidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/mwqem-saidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "power.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/power.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -35087,15 +34454,6 @@ prebuilt_etc_xml {
     name: "snapdragon_services.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/snapdragon_services.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "soundtrigger.qti.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/soundtrigger.qti.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -35393,15 +34751,6 @@ prebuilt_etc_xml {
     name: "vendor.qti.hardware.trustedui-aidl-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.trustedui-aidl-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.qti.hardware.vibrator.service.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -36587,7 +35936,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libutils",
-                "libqrtr_vendor",
+                "libqrtr",
                 "liblog",
                 "libcutils",
                 "libavservices_minijail",
@@ -36916,7 +36265,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "liblog",
                 "libssl",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libcdfw_remote_api",
                 "libpal_net_if",
                 "libsys_info_cache",
@@ -36945,7 +36294,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/engine-service",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libengineplugin",
                 "liblog",
                 "liblocdiagiface",
@@ -38461,7 +37810,7 @@ cc_prebuilt_binary {
                 "libqti-perfd",
                 "libqti-util",
                 "libavservices_minijail",
-                "libqti-perfd-client_vendor",
+                "libqti-perfd-client",
                 "android.hardware.thermal-V1-ndk",
                 "libqti-s3tf",
                 "libsqlite",
@@ -39690,7 +39039,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "libc++",
@@ -39726,7 +39075,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libcutils",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "liblog",
@@ -40569,7 +39918,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qrtr-cfg",
             ],
             shared_libs: [
-                "libqrtr_vendor",
+                "libqrtr",
                 "libc++",
                 "libc",
                 "libm",
@@ -40594,7 +39943,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qrtr-lookup",
             ],
             shared_libs: [
-                "libqrtr_vendor",
+                "libqrtr",
                 "libc++",
                 "libc",
                 "libm",
@@ -40619,7 +39968,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/qrtr-ns",
             ],
             shared_libs: [
-                "libqrtr_vendor",
+                "libqrtr",
                 "libc++",
                 "libc",
                 "libm",
@@ -40683,8 +40032,8 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libutils",
                 "libcutils",
-                "libgps.utils_vendor",
-                "liblocation_api_vendor",
+                "libgps.utils",
+                "liblocation_api",
                 "libqesdk2_0",
                 "libjsoncpp",
                 "liblog",
@@ -40721,7 +40070,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libqesdk2_0",
                 "libjsoncpp",
-                "libqti-perfd-client_vendor",
+                "libqti-perfd-client",
                 "libavservices_minijail",
                 "libc++",
                 "libc",
@@ -41198,33 +40547,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "rkp_factory_extraction_tool64",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/rkp_factory_extraction_tool64",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libcrypto",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "rmt_storage",
     owner: "lenovo",
     target: {
@@ -41476,7 +40798,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/slim_daemon",
             ],
             shared_libs: [
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "liblog",
                 "libdiag",
                 "libqmi_csi",
@@ -41493,7 +40815,7 @@ cc_prebuilt_binary {
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
                 "libsnsapi",
                 "libloc_api_v02",
-                "libloc_core_vendor",
+                "libloc_core",
                 "liblbs_core",
                 "libc++",
                 "libc",
@@ -41775,7 +41097,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libjsoncpp",
                 "libcutils",
-                "libqrtr_vendor",
+                "libqrtr",
                 "libdsi_netctrl",
                 "libqmi_common_so",
                 "libqmi_csi",
@@ -41954,7 +41276,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libqsocket",
-                "libqrtr_vendor",
+                "libqrtr",
                 "liblog",
                 "libc++",
                 "libc",
@@ -42303,7 +41625,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libqrtr_vendor",
+                "libqrtr",
                 "libavservices_minijail",
                 "libc++",
                 "libc",
@@ -42748,8 +42070,8 @@ cc_prebuilt_binary {
                 "libcrypto",
                 "libssl",
                 "libsqlite",
-                "libgps.utils_vendor",
-                "libloc_core_vendor",
+                "libgps.utils",
+                "libloc_core",
                 "libizat_core",
                 "liblbs_core",
                 "liblog",
@@ -42790,12 +42112,12 @@ cc_prebuilt_binary {
                 "libcrypto",
                 "libz",
                 "libsqlite",
-                "libgps.utils_vendor",
+                "libgps.utils",
                 "libloc_base_util",
                 "libloc_mq_client",
                 "liblowi_common",
                 "liblowi_client",
-                "libloc_core_vendor",
+                "libloc_core",
                 "libizat_core",
                 "liblbs_core",
                 "libavservices_minijail",

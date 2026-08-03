@@ -146,11 +146,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_acdb_cal.acdb \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aconfig_flags.pb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
@@ -476,7 +472,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/lenovocust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/lenovocust.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/lenovoraw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/lenovoraw.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/linker.config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/linker.config.pb \
     vendor/lenovo/malbec/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
@@ -1497,18 +1492,16 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
     audio.bluetooth_qti.default \
-    audio.r_submix.default_vendor \
-    audio.usb.default_vendor \
     libQnnHtp_audio \
     camera.qcom.sm8750 \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
-    libaudiocorehal.default_vendor \
-    libaudiocorehal.qti_vendor \
-    libaudioeffecthal.qti_vendor \
+    libaudiocorehal.default \
+    libaudiocorehal.qti \
+    libaudioeffecthal.qti \
     libqtigatekeeper \
-    libsoundtriggerhal.qti_vendor \
+    libsoundtriggerhal.qti \
     mbedtls_qti \
     qc_bcs_lib \
     vendor.qti.hardware.alarm-impl \
@@ -1554,10 +1547,10 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libLenovoNvram \
     libMapService \
-    libOmxCore_vendor \
-    libOpenCL_vendor \
+    libOmxCore \
+    libOpenCL \
     libOpenCL_adreno \
-    libPeripheralStateUtils_vendor \
+    libPeripheralStateUtils \
     libQSEEComAPI \
     libQcelp13SwCodec \
     libQnnHtp \
@@ -1567,9 +1560,6 @@ PRODUCT_PACKAGES += \
     libQnnHtpV73Stub \
     libQtiRilLoadable \
     libQtiSocket \
-    libRSCpuRef_vendor \
-    libRSDriver_vendor \
-    libRS_internal_vendor \
     libScenescape \
     libSensorsInterface \
     libStereoRectifyWrapper \
@@ -1579,9 +1569,9 @@ PRODUCT_PACKAGES += \
     libTxPwrJni \
     libVoiceSdk \
     libWlanServiceJni \
-    lib_bt_aptx_vendor \
-    lib_bt_ble_vendor \
-    lib_bt_bundle_vendor \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     libadm \
     libadreno_app_profiles \
     libadreno_compiler_cl \
@@ -1589,41 +1579,37 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadsprpc \
     libafw \
-    libagm_vendor \
-    libagm_compress_plugin_vendor \
-    libagm_mixer_plugin_vendor \
-    libagm_pcm_plugin_vendor \
-    libagmclient_vendor \
-    libagmipcservice_vendor \
+    libagm \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
+    libagmipcservice \
     libagmmixer \
     libaidenoiser \
     libaidenoiserv2 \
     libaipriv \
-    libalsautils_vendor \
     libaodoptfeature \
     libapengine \
     libappclassifier \
-    libar-acdb_vendor \
-    libar-gpr_vendor \
-    libar-gsl_vendor \
-    libar-pal_vendor \
+    libar-acdb \
+    libar-gpr \
+    libar-gsl \
+    libar-pal \
     libarcsoft_face_biometric \
     libarcsoft_face_mink \
     libarcsoft_faceid \
     libarmemlog \
-    libats_vendor \
+    libats \
     libaudio_log_utils \
-    libaudiochargerlistener_vendor \
-    libaudioroute_vendor \
+    libaudiochargerlistener \
     libbacklight-calib \
     libbase64 \
-    libbatching_vendor \
-    libbatterylistener_vendor \
-    libbcinfo_vendor \
+    libbatching \
+    libbatterylistener \
     libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
-    libblas_vendor \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -1678,11 +1664,10 @@ PRODUCT_PACKAGES += \
     libcodec2_store_dolby \
     libcom.qti.chinodeutils \
     libcommonchiutils \
-    libcompiler_rt_vendor \
     libconfigdb \
     libcpion \
     libcrypto_data \
-    libcustomva_intf_vendor \
+    libcustomva_intf \
     libcv_common \
     libdapparamstorage \
     libdataitems \
@@ -1725,14 +1710,14 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
-    libfmpal_vendor \
+    libfmpal \
     libgame_enhance \
     libgamepoweroptfeature \
     libgdtap \
-    libgeofencing_vendor \
-    libgnss_vendor \
+    libgeofencing \
+    libgnss \
     libgnsspps \
-    libgps.utils_vendor \
+    libgps.utils \
     libgpt \
     libgpudataproducer \
     libgsl \
@@ -1744,9 +1729,9 @@ PRODUCT_PACKAGES += \
     libhdr_backlight_adapter \
     libhdr_stub \
     libhdr_tm \
-    libhfp_pal_vendor \
+    libhfp_pal \
     libhme \
-    libhotword_intf_vendor \
+    libhotword_intf \
     libhwfenceclient \
     libhwliqinterface2 \
     libhwlispcffdump \
@@ -1785,13 +1770,13 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_api_wds \
     libloc_base_util \
-    libloc_core_vendor \
+    libloc_core \
     libloc_eng_hub \
     libloc_mq_client \
     libloc_qwes_iface \
     libloc_socket \
     libloc_util \
-    liblocation_api_vendor \
+    liblocation_api \
     liblocation_api_msg \
     liblocation_client_api \
     liblocation_integration_api \
@@ -1803,15 +1788,15 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util_vendor \
-    liblx-osal_vendor \
+    liblx-ar_util \
+    liblx-osal \
     libmapdata_api \
     libmcs \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
     libmemperfd \
-    libmemutils_vendor \
+    libmemutils \
     libmeters-ns \
     libmeters \
     libmfGhostDetection \
@@ -1822,7 +1807,7 @@ PRODUCT_PACKAGES += \
     libmiracast \
     libmlremosaicengine \
     libmm-hdcpmgr \
-    libmm-omxcore_vendor \
+    libmm-omxcore \
     libmmcamera_bestats \
     libmmcamera_cac \
     libmmcamera_lscv35 \
@@ -1835,7 +1820,6 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder_vendor \
     libmpbase \
     libnative-api \
-    libnbaio_mono_vendor \
     libnicm \
     libnicm_dsi \
     libnicm_interface \
@@ -1876,9 +1860,9 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient_vendor \
-    libpaleventnotifier_vendor \
-    libpalipcservice_vendor \
+    libpalclient \
+    libpaleventnotifier \
+    libpalipcservice \
     libpasrutils \
     libpat_uint8 \
     libpdmapper \
@@ -1887,7 +1871,7 @@ PRODUCT_PACKAGES += \
     libperfdb \
     libperfioctl \
     libperipheral_client \
-    libplatformconfig_vendor \
+    libplatformconfig \
     libpolygon \
     libpowercallback \
     libpowercore \
@@ -1976,7 +1960,7 @@ PRODUCT_PACKAGES += \
     libqms_optimized_route_mgr_sdk \
     libqms_packetstats_sdk \
     libqms_sdf_sdk \
-    libqrtr_vendor \
+    libqrtr \
     libqrtrclient \
     libqseed3 \
     libqsegnet \
@@ -1991,7 +1975,7 @@ PRODUCT_PACKAGES += \
     libqti-appclassifier \
     libqti-jankrescue \
     libqti-lllite \
-    libqti-perfd-client_vendor \
+    libqti-perfd-client \
     libqti-perfd \
     libqti-perfextn-intf \
     libqti-qesdk-secure \
@@ -2053,7 +2037,7 @@ PRODUCT_PACKAGES += \
     libsmemlog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
-    libsndcardparser_vendor \
+    libsndcardparser \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_dynamic_loader_stub \
@@ -2071,8 +2055,7 @@ PRODUCT_PACKAGES += \
     libsrc_jni_getPasrService \
     libssc_default_listener \
     libssd \
-    libstagefright_bufferqueue_helper_vendor \
-    libstagefrighthw_vendor \
+    libstagefrighthw \
     libstandbyfeature \
     libstcMotoColor \
     libstreamparser \
@@ -2109,7 +2092,6 @@ PRODUCT_PACKAGES += \
     libvideotxr \
     libvideoutils \
     libvmfilexfer \
-    libvndfwk_detect_jni.qti_vendor \
     libvppclient \
     libvppcommon \
     libvpphcp \
@@ -2119,7 +2101,7 @@ PRODUCT_PACKAGES += \
     libvpptestutils \
     libvui_dmgr \
     libvui_dmgr_client \
-    libvui_intf_vendor \
+    libvui_intf \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -2215,20 +2197,14 @@ PRODUCT_PACKAGES += \
     libvpt_action_recognition \
     libworker_pool \
     sensors.qsh \
-    libbundleaidl_vendor \
     libdlbvolaidl \
-    libdownmixaidl_vendor \
-    libdynamicsprocessingaidl_vendor \
-    libloudnessenhanceraidl_vendor \
-    libqcompostprocbundle_vendor \
-    libqcomvisualizer_vendor \
-    libqcomvoiceprocessing_vendor \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
     libquasar \
-    libreverbaidl_vendor \
     libswdapaidl \
     libswgamedapaidl \
-    libvisualizeraidl_vendor \
-    libvolumelistener_vendor \
+    libvolumelistener \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -2366,7 +2342,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.trustedui@1.0 \
-    vendor.qti.hardware.vibratorCL.impl_vendor \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -2494,22 +2469,17 @@ PRODUCT_PACKAGES += \
     deviceinfo-saidl.xml \
     dms-service.xml \
     dvs-aidl-service.xml \
-    face-default.xml \
     lenovo.hardware.ai-service.xml \
     manifest_afw.xml \
-    manifest_audio_qti_services.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
-    memtrack_qti.xml \
     mwqem-saidl.xml \
-    power.xml \
     qasr_vintf.xml \
     qesdk-manager.xml \
     qms-saidl.xml \
     qspa-modem.xml \
     qspa-nav.xml \
     snapdragon_services.xml \
-    soundtrigger.qti.xml \
     vendor.dolby.media.c2-default-service-dax.xml \
     vendor.lenovo.hardware.battery-service.xml \
     vendor.lenovo.hardware.display-service.xml \
@@ -2543,7 +2513,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
-    vendor.qti.hardware.vibrator.service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifi.wifilearner-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
@@ -2784,7 +2753,6 @@ PRODUCT_PACKAGES += \
     qvrservicetest \
     qwes_cli \
     qwesd \
-    rkp_factory_extraction_tool64 \
     rmt_storage \
     rpmbClient \
     sec_log_enabler \
