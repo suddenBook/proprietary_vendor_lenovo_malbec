@@ -8745,7 +8745,7 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libGLESv2",
                 "libGLESv3",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libm",
                 "libc",
             ],
@@ -10992,7 +10992,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -14535,7 +14535,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libVoiceSdk",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -23916,6 +23916,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtensorflowlite_c_vendor",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtensorflowlite_c_vendor.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -33460,46 +33484,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwfdnative",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdnative.so",
-            ],
-            shared_libs: [
-                "libandroid_runtime",
-                "libui",
-                "libinput",
-                "libnativehelper",
-                "libutils",
-                "liblog",
-                "libwfdclient",
-                "libhidlbase",
-                "libhidlmemory",
-                "libbinder",
-                "libgui",
-                "android.hidl.base@1.0",
-                "android.hidl.token@1.0-utils",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwfdrtsp",
     owner: "lenovo",
     strip: {
@@ -34201,18 +34185,6 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "WfdService",
-    owner: "lenovo",
-    apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
     system_ext_specific: true,
 }
 
@@ -36498,34 +36470,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libhardware",
                 "libbtnv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "hal_proxy_daemon",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hal_proxy_daemon",
-            ],
-            shared_libs: [
-                "libnl",
-                "libcutils",
-                "liblog",
-                "libwifi-hal-qcom",
                 "libc++",
                 "libc",
                 "libm",
@@ -40759,37 +40703,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "sigma_dut",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/sigma_dut",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libnl",
-                "libnetutils",
-                "libwifi-hal-qcom",
-                "liblog",
-                "libkeystore-engine-wifi-hidl",
-                "libkeystore-wifi-hidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "slim_daemon",
     owner: "lenovo",
     target: {
@@ -41802,39 +41715,6 @@ cc_prebuilt_binary {
                 "libvpptestutils",
                 "libdmabufheap",
                 "libvppcommon",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vpplibraryunittest",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vpplibraryunittest",
-            ],
-            shared_libs: [
-                "libvpphvx",
-                "libvpphcp",
-                "libcutils",
-                "liblog",
-                "libvpplibrary",
-                "libvpptestutils",
-                "libvppcommon",
-                "qti.video.utils.videobufferlayout",
-                "libdmabufheap",
                 "libc++",
                 "libc",
                 "libm",

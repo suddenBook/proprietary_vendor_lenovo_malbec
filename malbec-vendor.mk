@@ -2071,6 +2071,7 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libsystem_health_mon2 \
     libtaautoload \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libtfestriping \
     libthermalclient \
@@ -2419,7 +2420,6 @@ PRODUCT_PACKAGES += \
     libwfdmminterface \
     libwfdmmsink \
     libwfdmmsrc_system \
-    libwfdnative \
     libwfdrtsp \
     libwfdservice \
     libwfdsinksm \
@@ -2452,7 +2452,6 @@ PRODUCT_PACKAGES += \
     FrameworksUtilsSysService \
     PowerOffAlarm \
     QCC \
-    WfdService \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
@@ -2583,7 +2582,6 @@ PRODUCT_PACKAGES += \
     fmfactorytest \
     fmfactorytestserver \
     ftmdaemon \
-    hal_proxy_daemon \
     hdcp1prov \
     hdcp2p2prov \
     hexlpservice \
@@ -2760,7 +2758,6 @@ PRODUCT_PACKAGES += \
     sensors.qti \
     sg_write_buffer \
     shsusrd \
-    sigma_dut \
     slim_daemon \
     smcinvoke_example \
     smcinvoke_skeleton \
@@ -2798,7 +2795,6 @@ PRODUCT_PACKAGES += \
     vndservicemanager \
     vppcommonlibraryunittest \
     vpplibraryfunctionaltest \
-    vpplibraryunittest \
     vppservice \
     vppserviceunittest \
     wdsdaemon \
