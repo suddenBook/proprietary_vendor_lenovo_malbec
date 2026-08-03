@@ -7,5 +7,6 @@ on post-fs-data
       mkdir /data/vendor/qms_logs/config 0700 radio radio
 
 service vendor.qms /vendor/bin/qms
+    user root
      class main
      group radio wakelock wifi inet net_admin

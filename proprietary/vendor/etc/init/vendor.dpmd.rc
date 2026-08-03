@@ -10,6 +10,7 @@ on post-fs-data
 
 #start vendor.dpmd service
 service vendor.dpmd /vendor/bin/vendor.dpmd
+    user root
     class late_start
     #socket dpmd stream 660 root radio
     #socket tcm  stream 660 root inet
