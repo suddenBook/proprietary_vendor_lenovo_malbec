@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/CHGPD_Baldur.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/CHGPD_Baldur.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/FIT_V24_2_volte_full_ip.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/FIT_V24_2_volte_full_ip.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/FIT_V24_3_audio.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/FIT_V24_3_audio.cfg \
-    vendor/lenovo/malbec/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/MM_audio_playback_capture_v2.0.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/MM_audio_playback_capture_v2.0.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/Record_playback.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/Record_playback.cfg \
@@ -325,7 +324,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/facelandmark/weight_3_2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facelandmark/weight_3_2.dat \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/itof/tuning_params_sensor_type_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/eva/itof/tuning_params_sensor_type_1.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/fstab.qcom.dm:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom.dm \
     vendor/lenovo/malbec/proprietary/vendor/etc/fstab.zram_wb:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram_wb \
     vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_kera-mtp-qmp-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kera-mtp-qmp-snd-card \
@@ -389,7 +387,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/lenovo.hardware.ai-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lenovo.hardware.ai-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/lrootfs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lrootfs.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/nicmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nicmd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
@@ -452,7 +449,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
@@ -957,6 +953,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6750/WCNSS_qcom_cfg.ini \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/wcn7750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wcn7750/WCNSS_qcom_cfg.ini \
+    vendor/lenovo/malbec/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/lenovo/malbec/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
@@ -2470,7 +2467,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti.xml \
     bcs-ranging.xml \
     bluetooth-finder.xml \
-    bluetooth_audio.xml \
     bluetooth_hci.xml \
     bluetooth_sar.xml \
     bt_lmp_event-saidl.xml \
@@ -2490,7 +2486,6 @@ PRODUCT_PACKAGES += \
     manifest_identity_credential.xml \
     memtrack_qti.xml \
     mwqem-saidl.xml \
-    power.xml \
     qasr_vintf.xml \
     qesdk-manager.xml \
     qms-saidl.xml \
@@ -2531,7 +2526,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
-    vendor.qti.hardware.vibrator.service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifi.wifilearner-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
@@ -2646,7 +2640,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service \
     vendor.qti.hardware.soter-service \
     vendor.qti.hardware.trustedui-aidl-service-qti \
-    vendor.qti.hardware.vibrator.service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.memory.pasrmanager-service \
@@ -2720,7 +2713,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     loopback \
     lowi-server \
-    lrootfs \
     mcs_test \
     mlid \
     mm-audio-ftm \

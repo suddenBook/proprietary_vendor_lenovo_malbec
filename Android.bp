@@ -34424,15 +34424,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "bluetooth_audio.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "bluetooth_hci.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/bluetooth_hci.xml",
@@ -34598,15 +34589,6 @@ prebuilt_etc_xml {
     name: "mwqem-saidl.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/mwqem-saidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "power.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/power.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -34967,15 +34949,6 @@ prebuilt_etc_xml {
     name: "vendor.qti.hardware.trustedui-aidl-service.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.trustedui-aidl-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.qti.hardware.vibrator.service.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -38231,37 +38204,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.hardware.vibrator.service",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.vibrator.service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libbase",
-                "libbinder_ndk",
-                "android.hardware.vibrator-V2-ndk",
-                "vendor.qti.hardware.vibrator.impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.qti.media.c2@1.0-service",
     owner: "lenovo",
     target: {
@@ -39299,14 +39241,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "lrootfs",
-    owner: "lenovo",
-    src: "proprietary/vendor/bin/lrootfs.sh",
-    filename: "lrootfs.sh",
     soc_specific: true,
 }
 
