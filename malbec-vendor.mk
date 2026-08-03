@@ -14,22 +14,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/lenovo/malbec/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/lenovo/malbec/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/lenovo/malbec/proprietary/vendor/app/CACertService/oat/arm64/CACertService.odex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/CACertService/oat/arm64/CACertService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/CneApp/oat/arm64/CneApp.odex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/CneApp/oat/arm64/CneApp.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/ConnectionSecurityService/oat/arm64/ConnectionSecurityService.odex:$(TARGET_COPY_OUT_VENDOR)/app/ConnectionSecurityService/oat/arm64/ConnectionSecurityService.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/ConnectionSecurityService/oat/arm64/ConnectionSecurityService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/ConnectionSecurityService/oat/arm64/ConnectionSecurityService.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/IWlanService/oat/arm64/IWlanService.odex:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/oat/arm64/IWlanService.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/IWlanService/oat/arm64/IWlanService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/oat/arm64/IWlanService.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/QFingerprintService/oat/arm64/QFingerprintService.odex:$(TARGET_COPY_OUT_VENDOR)/app/QFingerprintService/oat/arm64/QFingerprintService.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/QFingerprintService/oat/arm64/QFingerprintService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/QFingerprintService/oat/arm64/QFingerprintService.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/TimeService/oat/arm64/TimeService.odex:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/oat/arm64/TimeService.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/TimeService/oat/arm64/TimeService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/oat/arm64/TimeService.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/TrustZoneAccessService/oat/arm64/TrustZoneAccessService.odex:$(TARGET_COPY_OUT_VENDOR)/app/TrustZoneAccessService/oat/arm64/TrustZoneAccessService.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/TrustZoneAccessService/oat/arm64/TrustZoneAccessService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/TrustZoneAccessService/oat/arm64/TrustZoneAccessService.vdex \
-    vendor/lenovo/malbec/proprietary/vendor/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.odex:$(TARGET_COPY_OUT_VENDOR)/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.odex \
-    vendor/lenovo/malbec/proprietary/vendor/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.vdex:$(TARGET_COPY_OUT_VENDOR)/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.vdex \
     vendor/lenovo/malbec/proprietary/vendor/etc/5GNR_LTE_CN_V9.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/5GNR_LTE_CN_V9.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so \
     vendor/lenovo/malbec/proprietary/vendor/etc/ASR_binary/Whisper/speech_float.eai:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/speech_float.eai \
@@ -1309,9 +1293,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn1rtlp43270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rtlp43270.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn2all.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn2all.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn3all.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn3all.bin \
-    vendor/lenovo/malbec/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg \
-    vendor/lenovo/malbec/proprietary/vendor/priv-app/pasrservice/oat/arm64/pasrservice.odex:$(TARGET_COPY_OUT_VENDOR)/priv-app/pasrservice/oat/arm64/pasrservice.odex \
-    vendor/lenovo/malbec/proprietary/vendor/priv-app/pasrservice/oat/arm64/pasrservice.vdex:$(TARGET_COPY_OUT_VENDOR)/priv-app/pasrservice/oat/arm64/pasrservice.vdex
+    vendor/lenovo/malbec/proprietary/vendor/persist/display/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/persist/display/dolby_vision.cfg
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
@@ -2430,6 +2412,7 @@ PRODUCT_PACKAGES += \
     libwfdmminterface \
     libwfdmmsink \
     libwfdmmsrc_system \
+    libwfdnative \
     libwfdrtsp \
     libwfdservice \
     libwfdsinksm \
@@ -2462,6 +2445,7 @@ PRODUCT_PACKAGES += \
     FrameworksUtilsSysService \
     PowerOffAlarm \
     QCC \
+    WfdService \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
