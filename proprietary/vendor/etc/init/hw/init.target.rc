@@ -251,6 +251,7 @@ service vendor.per_proxy /vendor/bin/pm-proxy
 #    disabled
 
 service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
+    user root
     class core
     oneshot
 

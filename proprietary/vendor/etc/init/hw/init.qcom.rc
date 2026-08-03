@@ -459,6 +459,7 @@ on property:persist.vendor.qcomsysd.enabled=0
     stop qcomsysd
 
 service vendor.ssr_setup /system/vendor/bin/ssr_setup
+    user root
     oneshot
     disabled
 
@@ -658,6 +659,7 @@ service qmiproxy /system/bin/qmiproxy
     disabled
 
 service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
+    user root
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
     -m/data/vendor/wifi/wigig_p2p_supplicant.conf \
     -O/data/vendor/wifi/wigig_sockets -dd \
@@ -700,41 +702,49 @@ service vendor.sensingdaemon /vendor/bin/sensingdaemon
     disabled
 
 service dhcpcd_wlan0 /system/bin/dhcpcd -ABKLG
+    user root
     class late_start
     disabled
     oneshot
 
 service dhcpcd_bond0 /system/bin/dhcpcd -ABKLG
+    user root
     class late_start
     disabled
     oneshot
 
 service dhcpcd_p2p /system/bin/dhcpcd -ABKLG
+    user root
     class late_start
     disabled
     oneshot
 
 service dhcpcd_wigig0 /system/bin/dhcpcd -ABKLG
+    user root
     class late_start
     disabled
     oneshot
 
 service iprenew_wlan0 /system/bin/dhcpcd -n
+    user root
     class late_start
     disabled
     oneshot
 
 service iprenew_bond0 /system/bin/dhcpcd -n
+    user root
     class late_start
     disabled
     oneshot
 
 service iprenew_p2p /system/bin/dhcpcd -n
+    user root
     class late_start
     disabled
     oneshot
 
 service iprenew_wigig0 /system/bin/dhcpcd -n
+    user root
     class late_start
     disabled
     oneshot
@@ -773,11 +783,13 @@ on property:sys.shutdown.requested=*
     stop cnss-daemon
 
 service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
+    user root
     class late_start
     disabled
     oneshot
 
 service iprenew_bt-pan /system/bin/dhcpcd -n
+    user root
     class late_start
     disabled
     oneshot
@@ -820,6 +832,7 @@ service qti-testscripts /system/bin/sh /product/etc/init.qcom.testscripts.sh
     seclabel u:r:qti-testscripts:s0
 
 service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
+    user root
     class late_start
     group wifi inet
     disabled
@@ -905,6 +918,7 @@ service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
     oneshot
 
 service qlogd /system/xbin/qlogd
+    user root
     socket qlogd stream 0662 system system
     class main
     disabled
@@ -993,6 +1007,7 @@ on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
+    user root
     class core
     group system
     disabled
@@ -1022,6 +1037,7 @@ on property:vendor.chre.enabled=0
    stop chre
 
 service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
+    user root
     class main
     disabled
     oneshot
