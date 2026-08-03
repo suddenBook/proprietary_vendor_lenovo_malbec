@@ -146,7 +146,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_acdb_cal.acdb \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_workspaceFileXml.qwsp \
+    vendor/lenovo/malbec/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
+    vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
@@ -1314,6 +1317,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/priv-app/pasrservice/oat/arm64/pasrservice.vdex:$(TARGET_COPY_OUT_VENDOR)/priv-app/pasrservice/oat/arm64/pasrservice.vdex
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.common-V2-ndk_platform \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128e2csli_s5kjn1 \
@@ -1603,6 +1607,8 @@ PRODUCT_PACKAGES += \
     libats \
     libaudio_log_utils \
     libaudiochargerlistener \
+    libaudioplatformconverter.qti \
+    libaudioserviceexampleimpl \
     libbacklight-calib \
     libbase64 \
     libbatching \
@@ -1610,6 +1616,7 @@ PRODUCT_PACKAGES += \
     libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
+    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -1820,6 +1827,7 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder_vendor \
     libmpbase \
     libnative-api \
+    libnbaio_mono \
     libnicm \
     libnicm_dsi \
     libnicm_interface \
@@ -2198,13 +2206,19 @@ PRODUCT_PACKAGES += \
     libvpt_action_recognition \
     libworker_pool \
     sensors.qsh \
+    libbundleaidl \
     libdlbvolaidl \
+    libdownmixaidl \
+    libdynamicsprocessingaidl \
+    libloudnessenhanceraidl \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libquasar \
+    libreverbaidl \
     libswdapaidl \
     libswgamedapaidl \
+    libvisualizeraidl \
     libvolumelistener \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -2403,7 +2417,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
     vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
     vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
-    libdiag_system \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
@@ -2457,6 +2470,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti.xml \
     bcs-ranging.xml \
     bluetooth-finder.xml \
+    bluetooth_audio.xml \
     bluetooth_hci.xml \
     bluetooth_sar.xml \
     bt_lmp_event-saidl.xml \
@@ -2468,17 +2482,22 @@ PRODUCT_PACKAGES += \
     deviceinfo-saidl.xml \
     dms-service.xml \
     dvs-aidl-service.xml \
+    face-default.xml \
     lenovo.hardware.ai-service.xml \
     manifest_afw.xml \
+    manifest_audio_qti_services.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
+    memtrack_qti.xml \
     mwqem-saidl.xml \
+    power.xml \
     qasr_vintf.xml \
     qesdk-manager.xml \
     qms-saidl.xml \
     qspa-modem.xml \
     qspa-nav.xml \
     snapdragon_services.xml \
+    soundtrigger.qti.xml \
     vendor.dolby.media.c2-default-service-dax.xml \
     vendor.lenovo.hardware.battery-service.xml \
     vendor.lenovo.hardware.display-service.xml \
@@ -2512,6 +2531,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
     vendor.qti.hardware.trustedui-aidl-service.xml \
+    vendor.qti.hardware.vibrator.service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifi.wifilearner-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
