@@ -153,10 +153,6 @@ on post-fs-data
     chown system system /sys/devices/platform/product-device-info/info_sar
     chown system system /sys/devices/platform/product-device-info/info_hall
     #RGB dump text
-    mkdir /data/goodix_sensor 0771 system system
-    mkdir /data/goodix_sensor/data 0771 system system
-    mkdir /data/goodix_sensor/cali 0771 system system
-    mkdir /data/goodix_sensor/product_test 0771 system system
 
     # Audio add for smartpa calibration
     mkdir /mnt/vendor/persist/factory

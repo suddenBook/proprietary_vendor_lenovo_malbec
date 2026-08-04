@@ -125,7 +125,7 @@ if [ -d /proc/sys/walt ]; then
 	# configure input boost settings
 	# TN Begin modified by keji.sun 20251030 MALBECW-1193(input and scroll boost)
 	echo 1516800 1516800 2073600 2073600 2073600 2073600 2073600 1920000 > /proc/sys/walt/input_boost/input_boost_freq
-	echo 500 > /proc/sys/walt/input_boost/input_boost_ms
+	echo 100 > /proc/sys/walt/input_boost/input_boost_ms
 	# TN End modified by keji.sun 20251030 MALBECW-1193(input and scroll boost)
 	
 	echo "walt" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
