@@ -34,6 +34,7 @@ service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
+    disabled
 
 
 on post-fs-data

@@ -239,7 +239,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/lenovo.hardware.ai-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lenovo.hardware.ai-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/nicmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nicmd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/prop_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/prop_init.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
@@ -366,8 +365,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
@@ -402,9 +399,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/privapp-permissions-qti-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti-vendor.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/sku_tuna/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_tuna/android.hardware.sensor.accelerometer.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/sku_tuna/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_tuna/android.hardware.sensor.dynamic.head_tracker.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/sku_tuna/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_tuna/android.hardware.sensor.gyroscope.xml \
@@ -415,12 +410,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/permissions/vendor.qti.qva.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.qva.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/lenovo/malbec/proprietary/vendor/etc/pwr/CameraPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/CameraPowerOptFeature.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/pwr/GamePowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/GamePowerOptFeature.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/pwr/OffScreenPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/OffScreenPowerOptFeature.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/qspa/nav_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nav_disabled.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/qspa/nsp_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nsp_disabled.rc \
@@ -508,7 +497,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_95.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_95.png \
     vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/battery_bypass_c.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/battery_bypass_c.png \
     vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/battery_bypass_e.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/battery_bypass_e.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/sar/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sar/sar-vendor-cmd.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
@@ -569,70 +557,12 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_vertigo_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_vertigo_lsm6dso_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_vertigo_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_vertigo_lsm6dso_1.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_vertigo_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_vertigo_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_bu52053nvx_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_ccd_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_ccd_base.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_default_sensors.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_dynamic_sensors.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_dynamic_sensors_template.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_fcal_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_fcal_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_hdk_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_hdk_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_hdk_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_hdk_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_irq.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_lps22df_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_lps22df_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_mtp_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_mtp_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_mtp_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_mtp_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_mtp_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_mtp_mmc56x3x_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_power_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_qrd_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_qrd_default_sensors.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_qrd_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_qrd_icm4x6xx_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_qrd_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_qrd_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_qrd_tmd2755_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_qrd_tmd2755_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_qsh_ble_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_sht4x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_sht4x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_sx932x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_tmd2755_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_tmd2755_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_vertigo_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_vertigo_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_vertigo_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_vertigo_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/eliza_vertigo_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/eliza_vertigo_mmc56x3x_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_bu52053nvx_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_ccd_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_ccd_base.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_default_sensors.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_dynamic_sensors.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_dynamic_sensors_template.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_fcal_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_fcal_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_hdk_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_hdk_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_hdk_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_hdk_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_irq.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_lps22df_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_lps22df_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_mtp_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_mtp_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_mtp_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_mtp_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_mtp_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_mtp_mmc56x3x_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_power_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_qrd_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_qrd_default_sensors.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_qrd_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_qrd_icm4x6xx_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_qrd_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_qrd_mmc56x3x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_qrd_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_qrd_tmd3765_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_qsh_ble_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_sht4x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_sht4x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_sx932x_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_tmd3765_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_vertigo_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_vertigo_lsm6dso_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_vertigo_lsm6dso_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_vertigo_lsm6dso_1.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/pakala_vertigo_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/pakala_vertigo_mmc56x3x_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_common_sm8735.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common_sm8735.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6_actuator.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_ov32c4c_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_ov32c4c_4.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_ov32c4c_4_sm8735.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_ov32c4c_4_sm8735.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
@@ -1046,9 +976,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigsecure.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/camera/imx688_6.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_6.pb \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/camera/ov32c4c_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ov32c4c_4.pb \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/camera/ov32c4c_4_sm8735.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ov32c4c_4_sm8735.pb \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn1nrt430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt430.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn1nrt43180.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt43180.bin \
@@ -1074,7 +1001,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.common-V2-ndk_platform \
     btaudio_offload_if \
-    com.qti.eeprom.gt24p128e2csli_s5kjn1 \
     com.qti.eeprom.malbec_gc08a8 \
     com.qti.eeprom.malbec_ov08f10 \
     com.qti.eeprom.malbec_ov13b10 \
@@ -1273,7 +1199,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager-impl \
     vulkan.adreno \
     lenovo.hardware.ai-V1-ndk \
-    libATFWD \
     libAlacSwDec \
     libApeSwDec \
     libCB \
@@ -1300,7 +1225,6 @@ PRODUCT_PACKAGES += \
     libQnnHtpPrepare \
     libQnnHtpProfilingReader \
     libQnnHtpV73Stub \
-    libQtiSocket \
     libScenescape \
     libSensorsInterface \
     libStereoRectifyWrapper \
@@ -1330,7 +1254,6 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaipriv \
-    libaodoptfeature \
     libapengine \
     libappclassifier \
     libar-acdb \
@@ -1360,7 +1283,6 @@ PRODUCT_PACKAGES += \
     libbt-hidlclient \
     libbtnv \
     libcacertclient \
-    libcamerapoweroptfeature \
     libcamxcommonutils \
     libcamxcoreutils \
     libcamxcsl \
@@ -1445,7 +1367,6 @@ PRODUCT_PACKAGES += \
     libengineplugin \
     libeva \
     libeva_util \
-    libeye_tracking_dsp_sample_stub \
     libfaceid_ca_proxy.arcsoft \
     libfastcrc \
     libfastcvdsp_stub \
@@ -1454,7 +1375,6 @@ PRODUCT_PACKAGES += \
     libfilefinder \
     libfmpal \
     libgame_enhance \
-    libgamepoweroptfeature \
     libgps.utils \
     libgpt \
     libgpudataproducer \
@@ -1551,7 +1471,6 @@ PRODUCT_PACKAGES += \
     libnicm_dsi \
     libnicm_interface \
     libnicm_internal \
-    libnicm_modemproxy \
     libnicm_netlink \
     libnicm_recovery \
     libnicm_utils \
@@ -1575,7 +1494,6 @@ PRODUCT_PACKAGES += \
     liboemaids_vendor \
     liboemcrypto \
     libofestriping \
-    liboffscreenpoweroptfeature \
     libois_channel_stub \
     liboischannel \
     libopencv \
@@ -1599,13 +1517,11 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libplatformconfig \
     libpolygon \
-    libpowercore \
     libprefapps \
     libprekill \
     libprocomp \
     libproj_qmot_tracker \
     libproj_sot \
-    libpsmoptfeature \
     libptq_uint8 \
     libq-perflog \
     libqape_oem_ext \
@@ -1731,7 +1647,6 @@ PRODUCT_PACKAGES += \
     libsilkyscrolls \
     libsiminputgenutil \
     libskewknob \
-    libslimclient \
     libsmemlog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
@@ -1754,7 +1669,6 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssd \
     libstagefrighthw \
-    libstandbyfeature \
     libstcMotoColor \
     libstreamparser \
     libstreamprocessor \
@@ -1782,7 +1696,6 @@ PRODUCT_PACKAGES += \
     libubwcp \
     libuwb-aidlclient \
     libvideoml \
-    libvideooptfeature \
     libvideotxr \
     libvideoutils \
     libvmfilexfer \
@@ -1792,7 +1705,6 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvppimmotion \
     libvpplibrary \
-    libvpptestutils \
     libvui_dmgr \
     libvui_dmgr_client \
     libvui_intf \
@@ -1883,10 +1795,7 @@ PRODUCT_PACKAGES += \
     vendor.lenovo.hardware.touchscreen-V5-ndk \
     vendor.lenovo.hardware.usb-V2-ndk \
     vendor.microtrust.hardware.afw-V1-ndk \
-    vendor.qti.ImsRtpService-V1-ndk \
-    vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.MemHal-V1-ndk \
-    vendor.qti.data.factoryservice-V1-ndk \
     vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0 \
@@ -1904,9 +1813,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.capabilityconfigstore-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk \
     vendor.qti.hardware.data.connection@1.0 \
     vendor.qti.hardware.data.connection@1.1 \
     vendor.qti.hardware.data.connectionaidl-V1-ndk \
@@ -1927,7 +1833,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.embmsslaidl-V2-ndk \
-    vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.hexlp-V1-ndk \
@@ -1942,45 +1847,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.radio.am-V1-ndk \
-    vendor.qti.hardware.radio.am@1.0 \
-    vendor.qti.hardware.radio.atcmdfwd@1.0 \
-    vendor.qti.hardware.radio.atfwd-V1-ndk \
-    vendor.qti.hardware.radio.common-V1-ndk \
-    vendor.qti.hardware.radio.ims-V16-ndk \
-    vendor.qti.hardware.radio.ims@1.0 \
-    vendor.qti.hardware.radio.ims@1.1 \
-    vendor.qti.hardware.radio.ims@1.2 \
-    vendor.qti.hardware.radio.ims@1.3 \
-    vendor.qti.hardware.radio.ims@1.4 \
-    vendor.qti.hardware.radio.ims@1.5 \
-    vendor.qti.hardware.radio.ims@1.6 \
-    vendor.qti.hardware.radio.ims@1.7 \
-    vendor.qti.hardware.radio.ims@1.8 \
-    vendor.qti.hardware.radio.lpa-V1-ndk \
-    vendor.qti.hardware.radio.lpa@1.0 \
-    vendor.qti.hardware.radio.lpa@1.1 \
-    vendor.qti.hardware.radio.lpa@1.2 \
-    vendor.qti.hardware.radio.qtiradio-V16-ndk \
-    vendor.qti.hardware.radio.qtiradio@1.0 \
-    vendor.qti.hardware.radio.qtiradio@2.0 \
-    vendor.qti.hardware.radio.qtiradio@2.1 \
-    vendor.qti.hardware.radio.qtiradio@2.2 \
-    vendor.qti.hardware.radio.qtiradio@2.3 \
-    vendor.qti.hardware.radio.qtiradio@2.4 \
-    vendor.qti.hardware.radio.qtiradio@2.5 \
-    vendor.qti.hardware.radio.qtiradio@2.6 \
-    vendor.qti.hardware.radio.qtiradioconfig-V6-ndk \
-    vendor.qti.hardware.radio.uim-V1-ndk \
-    vendor.qti.hardware.radio.uim@1.0 \
-    vendor.qti.hardware.radio.uim@1.1 \
-    vendor.qti.hardware.radio.uim@1.2 \
-    vendor.qti.hardware.radio.uim_remote_client-V1-ndk \
-    vendor.qti.hardware.radio.uim_remote_client@1.0 \
-    vendor.qti.hardware.radio.uim_remote_client@1.1 \
-    vendor.qti.hardware.radio.uim_remote_client@1.2 \
-    vendor.qti.hardware.radio.uim_remote_server-V1-ndk \
-    vendor.qti.hardware.radio.uim_remote_server@1.0 \
     vendor.qti.hardware.secureprocessor.common-V1-ndk \
     vendor.qti.hardware.secureprocessor.common-helper \
     vendor.qti.hardware.secureprocessor.config-V1-ndk \
@@ -1998,20 +1864,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.hardware.wigig.netperftuner@1.0 \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callcapabilityaidlservice-V1-ndk \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.configaidlservice-V1-ndk \
-    vendor.qti.ims.connectionaidlservice-V1-ndk \
-    vendor.qti.ims.factoryaidlservice-V1-ndk \
-    vendor.qti.ims.imscmaidlservice-V1-ndk \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
-    vendor.qti.ims.rcssipaidlservice-V1-ndk \
-    vendor.qti.ims.rcsuceaidlservice-V1-ndk \
-    vendor.qti.ims.uceaidlservice-V1-ndk \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
@@ -2037,7 +1889,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libQnnHtpV73Skel_so \
     vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
     vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
-    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
     vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
     vendor_lib_rfsa_adsp_libhme_dsp_skel_so \
     vendor_lib_rfsa_adsp_libmctfengine_skel_so \
@@ -2149,10 +2000,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.syshealthmon-service.xml \
     vendor.qti.qesdsys.service.xml \
     C2PAInternetService \
-    GPTEE_Sample_client \
     KmInstallKeybox \
     StoreKeybox \
-    TrustedUISampleTAClient \
     adpl \
     adsprpcd \
     aecxsimulator \
@@ -2180,7 +2029,6 @@ PRODUCT_PACKAGES += \
     diag_socket_log \
     dlsc \
     dppdaemon \
-    drm_sample_app \
     dspservice \
     e_loop \
     engine-service \
@@ -2287,7 +2135,6 @@ PRODUCT_PACKAGES += \
     lowi-server \
     mlid \
     mm-audio-ftm \
-    nicmd \
     pd-mapper \
     pm-proxy \
     pm-service \
@@ -2303,7 +2150,6 @@ PRODUCT_PACKAGES += \
     qesdk-secmanager \
     qguard \
     qlm-service \
-    qmi_test_mt_client_init_instance \
     qmipriod \
     qrtr-cfg \
     qrtr-lookup \
@@ -2326,9 +2172,6 @@ PRODUCT_PACKAGES += \
     sensors.qti \
     sg_write_buffer \
     shsusrd \
-    smcinvoke_example \
-    smcinvoke_skeleton \
-    smcinvoke_skeleton_cpp \
     snapdragon_services \
     spdaemon \
     spectraltool \
