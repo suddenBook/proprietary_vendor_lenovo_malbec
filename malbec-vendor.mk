@@ -374,7 +374,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/nicmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nicmd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/prop_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/prop_init.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
@@ -1274,7 +1273,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/ov32c4c_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ov32c4c_4.pb \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/ov32c4c_4_sm8735.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ov32c4c_4_sm8735.pb \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/qfdserviceconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/qfdserviceconfig.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/libtinyxml2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2.so \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn1nrt430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt430.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn1nrt43180.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt43180.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/qsn1nrt43270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt43270.bin \
@@ -1482,7 +1480,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     libaudiocorehal.default \
     libaudiocorehal.qti \
-    libaudioeffecthal.qti \
     libqtigatekeeper \
     libsoundtriggerhal.qti \
     mbedtls_qti \
@@ -2712,7 +2709,6 @@ PRODUCT_PACKAGES += \
     pmic_key_reset \
     port-bridge \
     power_off_alarm \
-    poweropt-service \
     ppd \
     prop_init \
     qca6234-service \

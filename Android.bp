@@ -6714,26 +6714,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioeffecthal.qti",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/libaudioeffecthal.qti.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqtigatekeeper",
     owner: "lenovo",
     strip: {
@@ -39657,45 +39637,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libcutils",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "poweropt-service",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/poweropt-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libhwbinder",
-                "libbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "libpowercore",
-                "libtinyxml2",
-                "vendor.qti.hardware.perf2-V1-ndk",
-                "libbinder_ndk",
-                "vendor.qti.hardware.power.powermodule-V1-ndk",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
