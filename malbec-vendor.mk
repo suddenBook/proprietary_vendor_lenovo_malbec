@@ -151,6 +151,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/graphics_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/graphics_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/moto_stc_profile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/moto_stc_profile.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/pipe_config_DPU11__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/pipe_config_DPU11__.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_boe_nt36536e_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_boe_nt36536e_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_csot_af_nt36536_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_csot_af_nt36536_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_csot_nt36536_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_csot_nt36536_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
@@ -234,7 +235,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.factory-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.factory-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.hyperschedule-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.keyboard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.keyboard.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.misc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.misc-service.rc \
@@ -651,6 +651,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/firmware/CAMERA_ICP_1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mbn \
     vendor/lenovo/malbec/proprietary/vendor/firmware/CAMERA_ICP_1.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_1.mdt \
     vendor/lenovo/malbec/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
+    vendor/lenovo/malbec/proprietary/vendor/firmware/boe_novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/boe_novatek_ts_fw.bin \
+    vendor/lenovo/malbec/proprietary/vendor/firmware/boe_novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/boe_novatek_ts_mp.bin \
     vendor/lenovo/malbec/proprietary/vendor/firmware/csot_novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_novatek_ts_fw.bin \
     vendor/lenovo/malbec/proprietary/vendor/firmware/csot_novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_novatek_ts_mp.bin \
     vendor/lenovo/malbec/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
