@@ -6,9 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/malbec
 
 PRODUCT_COPY_FILES += \
-    vendor/lenovo/malbec/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/lenovo/malbec/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/lenovo/malbec/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/lenovo/malbec/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/lenovo/malbec/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/lenovo/malbec/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
@@ -49,12 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/texture_tick.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/texture_tick.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/thud.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/thud.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/tick.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tick.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/kera_cdp/CDP_kera_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kera_cdp/CDP_kera_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/kera_cdp/CDP_kera_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kera_cdp/CDP_kera_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/kera_mtp/MTP_kera_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kera_mtp/MTP_kera_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/kera_mtp/MTP_kera_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kera_mtp/MTP_kera_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/kera_qrd/QRD_kera_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kera_qrd/QRD_kera_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/kera_qrd/QRD_kera_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kera_qrd/QRD_kera_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
@@ -105,22 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.6_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_cdp/CDP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_cdp/CDP_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_cdp/CDP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_cdp/CDP_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_mtp/MTP_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_mtp/MTP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_mtp/MTP_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_qrd/QRD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_qrd/QRD_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_qrd/QRD_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_qrd_sku2/QRD_sun_sku2_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_qrd_sku2/QRD_sun_sku2_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/sun_qrd_sku2/QRD_sun_sku2_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sun_qrd_sku2/QRD_sun_sku2_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna7_mtp/MTP_tuna7_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna7_mtp/MTP_tuna7_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna7_mtp/MTP_tuna7_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna7_mtp/MTP_tuna7_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_cdp/CDP_tuna_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_cdp/CDP_tuna_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_cdp/CDP_tuna_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_cdp/CDP_tuna_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_mtp/MTP_tuna_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_mtp/MTP_tuna_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_mtp/MTP_tuna_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_mtp/MTP_tuna_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd/QRD_tuna_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd/QRD_tuna_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd/QRD_tuna_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd/QRD_tuna_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_acdb_cal.acdb \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308yc/QRD_tuna2_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308yc/QRD_tuna2_acdb_cal.acdb \
@@ -157,51 +133,18 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
     vendor/lenovo/malbec/proprietary/vendor/etc/cablconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cablconfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/lenovo/malbec/proprietary/vendor/etc/camera/thirdappsize.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/thirdappsize.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/lenovo/malbec/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile4.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile7.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile4.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile7.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/copy_aplog_dirs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/copy_aplog_dirs.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/country_code_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/country_code_list.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/data/nicm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/nicm_config.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/data/tlpd_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/tlpd_oem_config.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/default-permissions/vendor.qti.data.txpwradmin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/vendor.qti.data.txpwradmin.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/DPU1010.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1010.xml \
@@ -213,14 +156,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/SVIConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/SVIConfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_Sharp_qhd_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_Sharp_qhd_cmd_mode_dsi_panel.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_Sharp_qhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_Sharp_qhd_video_mode_dsi_panel.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/camera_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/camera_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/cpu_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/cpu_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/default_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/default_alignments.json \
@@ -228,42 +163,19 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/formats.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/formats.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/graphics_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/graphics_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/moto_stc_profile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/moto_stc_profile.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_cmd_mode_dsi_csot_panel_with_DSC_CPHY.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/nt37801_amoled_video_mode_dsi_csot_panel_with_DSC_CPHY.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/pipe_config_DPU11__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/pipe_config_DPU11__.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_Sharp_qhd_video_mode_dsi_panel.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_boe_nt36536e_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_boe_nt36536e_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_csot_af_nt36536_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_csot_af_nt36536_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_csot_nt36536_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_csot_nt36536_144hz_vid.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/displayconfig/display_id_4630947039571902850.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902850.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/displayconfig/display_id_4630947039571902851.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947039571902851.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/displayconfig/display_id_4630947075271898515.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947075271898515.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
-    vendor/lenovo/malbec/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/facedetection/bias.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/bias.dat \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/facedetection/weight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/weight.dat \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/facelandmark/bias_1_1.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facelandmark/bias_1_1.dat \
@@ -280,19 +192,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/fstab.zram_wb:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram_wb \
     vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_kera-mtp-qmp-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kera-mtp-qmp-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_kera-mtp-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kera-mtp-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_kera-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kera-qrd-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_sun-qrd-sku2-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_sun-qrd-sku2-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_sun-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_sun-qrd-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_tuna-mtp-qmp-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_tuna-mtp-qmp-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_tuna-mtp-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_tuna-mtp-snd-card \
     vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_tuna-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_tuna-qrd-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ftm_test_config_tuna7-mtp-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_tuna7-mtp-snd-card \
-    vendor/lenovo/malbec/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    vendor/lenovo/malbec/proprietary/vendor/etc/gps_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gps_diag.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/lenovo/malbec/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/lenovo/malbec/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
@@ -305,7 +206,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/c2painternetservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/c2painternetservice.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -322,11 +222,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/hw/init.qti.kernel.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.target.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/hw/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.extend_reclaim.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.extend_reclaim.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.qlm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qlm-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.qt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qt-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
@@ -347,14 +243,12 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/prop_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/prop_init.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qesdk-secmanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-secmanager.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qguard.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qguard.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qspa_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qspa_vendor.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/qttestservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qttestservice.rc \
@@ -367,7 +261,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/tndiag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tndiag.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.battery-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.battery-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.display-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.display-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vendor.lenovo.hardware.factory-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lenovo.hardware.factory-service.rc \
@@ -420,7 +313,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/wifisar.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifisar.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/lenovocust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/lenovocust.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/lenovoraw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/lenovoraw.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
@@ -446,42 +338,20 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_kera_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kera_v0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_kera_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kera_v1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_kera_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kera_v0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_kera_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kera_v1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_sun.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_sun_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_sun_vendor.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_tuna_v0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_tuna_v1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sun.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_sun_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_sun_vendor.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_tuna_v0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_tuna_v1.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_kera_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kera_v0/video_system_specs.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_kera_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kera_v1/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_kera_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kera_v0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_kera_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kera_v1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_sun.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_sun.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_tuna_v0.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_tuna_v1.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_sun/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_sun/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_tuna_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v0/video_system_specs.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_tuna_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v1/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/lenovo/malbec/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/lenovo/malbec/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/lenovo/malbec/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
-    vendor/lenovo/malbec/proprietary/vendor/etc/modem_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_configs.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/motorola/12m/cqatest_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_config.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/motorola/12m/mono.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/mono.mp3 \
-    vendor/lenovo/malbec/proprietary/vendor/etc/motorola/12m/moto.ogg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/moto.ogg \
-    vendor/lenovo/malbec/proprietary/vendor/etc/motorola/12m/silence.mp3:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/silence.mp3 \
     vendor/lenovo/malbec/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
@@ -551,33 +421,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0006.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0006.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0007.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0007.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0008.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0008.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0009.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0009.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0010.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0010.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0011.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0011.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0012.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0012.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0013.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0013.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0014.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0014.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/config/0015.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0015.0_config.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0014_version_update_modules.sql \
-    vendor/lenovo/malbec/proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql \
     vendor/lenovo/malbec/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/qspa/nav_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nav_disabled.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/qspa/nsp_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nsp_disabled.rc \
@@ -676,16 +519,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/c2pa_network.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2pa_network.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
-    vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
@@ -857,7 +692,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/stub_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/stub_audio_policy_configuration.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-audio.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-audio.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-camera.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-floating.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-floating.conf \
@@ -881,7 +715,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/wcn7750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wcn7750/WCNSS_qcom_cfg.ini \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/lenovo/malbec/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/lenovo/malbec/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/lenovo/malbec/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/lenovo/malbec/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -1392,11 +1225,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.nonlinearmapper \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.sfl \
-    com.qualcomm.qti.dpm.api@1.0 \
-    com.qualcomm.qti.imscmservice@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
     com.qualcomm.qti.mcx.usecase.extension \
     com.qualcomm.qti.uceservice@2.0 \
     com.qualcomm.qti.uceservice@2.1 \
@@ -1445,22 +1273,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager-impl \
     vulkan.adreno \
     lenovo.hardware.ai-V1-ndk \
-    lib-imscommon \
-    lib-imsdcservice \
-    lib-imsdpl \
-    lib-imsqimf \
-    lib-imsrcsservice \
-    lib-imsservice \
-    lib-imsvtcore \
-    lib-imsxml \
-    lib-rtpcommon \
-    lib-rtpcore \
-    lib-rtpsl \
     libATFWD \
     libAlacSwDec \
     libApeSwDec \
     libCB \
-    libCneAppJni \
     libDcfHalFramework \
     libDcfHalLogger \
     libDspIOProxy_stub \
@@ -1484,7 +1300,6 @@ PRODUCT_PACKAGES += \
     libQnnHtpPrepare \
     libQnnHtpProfilingReader \
     libQnnHtpV73Stub \
-    libQtiRilLoadable \
     libQtiSocket \
     libScenescape \
     libSensorsInterface \
@@ -1533,7 +1348,6 @@ PRODUCT_PACKAGES += \
     libaudioserviceexampleimpl \
     libbacklight-calib \
     libbase64 \
-    libbatching \
     libbatterylistener \
     libbiometricsface_ca.arcsoft \
     libbitmlengine \
@@ -1584,10 +1398,6 @@ PRODUCT_PACKAGES += \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
     libclstc_tm \
-    libcne \
-    libcneapiclient \
-    libcneoplookup \
-    libcneqmiutils \
     libcodec2_soft_ac4dec \
     libcodec2_soft_ddpdec \
     libcodec2_store_dolby \
@@ -1599,7 +1409,6 @@ PRODUCT_PACKAGES += \
     libcustomva_intf \
     libcv_common \
     libdapparamstorage \
-    libdataitems \
     libdeccfg \
     libdemura_oem_plugin \
     libdepthcomputation \
@@ -1646,10 +1455,6 @@ PRODUCT_PACKAGES += \
     libfmpal \
     libgame_enhance \
     libgamepoweroptfeature \
-    libgdtap \
-    libgeofencing \
-    libgnss \
-    libgnsspps \
     libgps.utils \
     libgpt \
     libgpudataproducer \
@@ -1679,8 +1484,6 @@ PRODUCT_PACKAGES += \
     libipebpsstriping170 \
     libipebpsstriping480 \
     libisphwsetting \
-    libizat_client_api \
-    libizat_core \
     libjni_fdfeature \
     libjni_imageutil \
     libjnihelper \
@@ -1691,7 +1494,6 @@ PRODUCT_PACKAGES += \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
-    liblbs_core \
     liblearningmodule \
     liblenovo_keyboard \
     liblightninglaunches \
@@ -1704,22 +1506,9 @@ PRODUCT_PACKAGES += \
     liblmutils-ns \
     libloadalgo_stub \
     libloadtrusteduiapp \
-    libloc_api_v02 \
-    libloc_api_wds \
     libloc_base_util \
-    libloc_core \
-    libloc_eng_hub \
     libloc_mq_client \
-    libloc_qwes_iface \
     libloc_socket \
-    libloc_util \
-    liblocation_api \
-    liblocation_api_msg \
-    liblocation_client_api \
-    liblocation_integration_api \
-    liblocation_qesdk \
-    liblocationservice \
-    liblocationservice_glue \
     liblocdiagiface \
     liblowi_client \
     liblowi_common \
@@ -1727,7 +1516,6 @@ PRODUCT_PACKAGES += \
     liblqe \
     liblx-ar_util \
     liblx-osal \
-    libmapdata_api \
     libmapperutils \
     libmcs \
     libmctfengine_stub \
@@ -1798,7 +1586,6 @@ PRODUCT_PACKAGES += \
     libopestriping \
     libops \
     libos \
-    libpal_net_if \
     libpalclient \
     libpaleventnotifier \
     libpalipcservice \
@@ -1834,8 +1621,6 @@ PRODUCT_PACKAGES += \
     libqc2audio_utils \
     libqc2vppfilter \
     libqcbor \
-    libqcc_file_agent \
-    libqcc_sdk \
     libqcci_legacy \
     libqcmaputils \
     libqcodec2_base \
@@ -1852,21 +1637,8 @@ PRODUCT_PACKAGES += \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
     libqconfigclient \
-    libqcrilDataModule \
-    libqcrilNr \
-    libqcrilNrCellInfoModule \
-    libqcrilNrFramework \
-    libqcrilNrImsModule \
     libqcrilNrLogger \
-    libqcrilNrPbmModule \
-    libqcrilNrQtiBus \
     libqcrilNrQtiMutex \
-    libqcrilNrSmsModule \
-    libqcrilNrSocketModule \
-    libqcrilNrVoiceModule \
-    libqcrildataaidl \
-    libqcrildatactl \
-    libqcrildataqos \
     libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
@@ -1895,11 +1667,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiextservices \
     libqmiservices \
-    libqms \
-    libqms_client \
-    libqms_optimized_route_mgr_sdk \
-    libqms_packetstats_sdk \
-    libqms_sdf_sdk \
     libqrtr \
     libqrtrclient \
     libqseed3 \
@@ -1907,7 +1674,6 @@ PRODUCT_PACKAGES += \
     libqservice \
     libqsh \
     libqsh_ble_pb \
-    libqsh_wifi_test \
     libqshcamera \
     libqsocket \
     libqspm-mem-utils-vendor \
@@ -1931,7 +1697,6 @@ PRODUCT_PACKAGES += \
     libqtikeymint \
     libqtjsonhelper \
     libqtnodes \
-    libqttestclient \
     libqttestservice \
     libqwes \
     librcc \
@@ -1939,11 +1704,6 @@ PRODUCT_PACKAGES += \
     librecovery_updater \
     librecovery_updater_msm \
     libreffeature \
-    libril-db \
-    libril-legacy \
-    libril-qc-ltedirectdisc \
-    libril-qc-radioconfig \
-    librilqmimiscservices \
     librpmb \
     libsbprovision \
     libscveCommon \
@@ -1966,7 +1726,6 @@ PRODUCT_PACKAGES += \
     libsensor_calibration \
     libsensorcal \
     libsensorslog \
-    libsfeShiftExtrapolation \
     libshsc \
     libsi \
     libsilkyscrolls \
@@ -2001,9 +1760,7 @@ PRODUCT_PACKAGES += \
     libstreamprocessor \
     libsubsystem_control \
     libswregistrationalgo \
-    libsynergy_loc_api \
     libsynx \
-    libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon2 \
     libtaautoload \
@@ -2059,37 +1816,10 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_vendor \
     libwfduibcsrcinterface_vendor \
     libwfdutils_proprietary \
-    libwifiobserver \
-    libwms \
-    libwqe \
     libxml \
     libxpan_wifi_hal \
-    libxtadapter \
-    qcrilInterfaces \
-    qcrilIntermodulemsgs \
-    qcrilMarshal \
-    qcrilNrQmiModule \
-    qcrilNrSecureMode \
-    qcrilNr_aidl_IQtiRadioConfig \
-    qcrilNr_aidl_IRadioConfig \
-    qcrilNr_aidl_IRadioMessaging \
-    qcrilNr_aidl_IRadioModem \
-    qcrilNr_aidl_IRadioNetwork \
-    qcrilNr_aidl_IRadioSap \
-    qcrilNr_aidl_IRadioSim \
-    qcrilNr_aidl_IRadioVoice \
-    qcrilNr_aidl_SecureElementService \
-    qcrilNr_aidl_UimLpaService \
-    qcrilNr_aidl_UimRemoteClient \
-    qcrilNr_aidl_UimRemoteServer \
-    qcrilNr_aidl_UimService \
-    qcrilNr_aidl_common \
-    qcril_client \
-    qcrild_libqcrilnr \
-    qcrild_libqcrilnrutils \
     qti.video.utils.videobufferlayout \
     qtiPeripheralMgr \
-    qtiril-utils \
     qtiwakelock \
     libVppAisQnnHtp \
     libVppFrcQnnHtp \
@@ -2152,11 +1882,6 @@ PRODUCT_PACKAGES += \
     vendor.lenovo.hardware.performance-V1-ndk \
     vendor.lenovo.hardware.touchscreen-V5-ndk \
     vendor.lenovo.hardware.usb-V2-ndk \
-    vendor.libdpmctmgr \
-    vendor.libdpmfdmgr \
-    vendor.libdpmframework \
-    vendor.libdpmtcm \
-    vendor.libmwqemiptablemgr \
     vendor.microtrust.hardware.afw-V1-ndk \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-aidl-Impl \
@@ -2200,7 +1925,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
     vendor.qti.hardware.display.snapalloc-impl \
-    vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.embmsslaidl-V2-ndk \
     vendor.qti.hardware.fingerprint@1.0 \
@@ -2218,7 +1942,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.qxr-V2-ndk \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
@@ -2238,8 +1961,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.lpa@1.0 \
     vendor.qti.hardware.radio.lpa@1.1 \
     vendor.qti.hardware.radio.lpa@1.2 \
-    vendor.qti.hardware.radio.qcrilhook-V1-ndk \
-    vendor.qti.hardware.radio.qcrilhook@1.0 \
     vendor.qti.hardware.radio.qtiradio-V16-ndk \
     vendor.qti.hardware.radio.qtiradio@1.0 \
     vendor.qti.hardware.radio.qtiradio@2.0 \
@@ -2299,9 +2020,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.power.pasrmanager@1.0 \
-    vendor.qti.qccsyshal_aidl-V1-ndk_vendor \
-    vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
-    vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal-impl \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
@@ -2329,9 +2047,6 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
-    libqcc \
-    libqcc_file_agent_sys \
-    libqccfileservice \
     libqesdk_ndk_platform.qti \
     libwfdavenhancements \
     libwfdclient \
@@ -2351,29 +2066,16 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.diaghal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.1 \
-    vendor.qti.hardware.qccsyshal@1.2 \
-    vendor.qti.hardware.qccvndhal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
-    vendor.qti.qccsyshal_aidl-V1-ndk \
-    vendor.qti.qccsyshal_aidl-halimpl \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
     com.google.android.widevine.nonupdatable \
     CACertService \
-    CneApp \
-    ConnectionSecurityService \
-    IWlanService \
-    QFingerprintService \
     TimeService \
     TrustZoneAccessService \
-    TxPwrAdmin \
     com.qualcomm.qti.gpudrivers.sun.api35 \
     pasrservice \
     FrameworksUtilsSysService \
     PowerOffAlarm \
-    QCC \
     WfdService \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.drm-service.xml \
@@ -2387,7 +2089,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     c2_manifest_vendor_audio.xml \
     cacert-saidl.xml \
-    datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
     dms-service.xml \
     dvs-aidl-service.xml \
@@ -2402,7 +2103,6 @@ PRODUCT_PACKAGES += \
     mwqem-saidl.xml \
     qasr_vintf.xml \
     qesdk-manager.xml \
-    qms-saidl.xml \
     qspa-modem.xml \
     qspa-nav.xml \
     snapdragon_services.xml \
@@ -2436,7 +2136,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.qconfig-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
-    vendor.qti.hardware.qxr-service.xml \
     vendor.qti.hardware.secureprocessor.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
@@ -2446,22 +2145,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.wifilearner-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.memory.pasrmanager-service.xml \
-    vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
-    vendor.qti.qccsyshal_aidl-service.xml \
     vendor.qti.qesdsys.service.xml \
-    AnchorTest \
     C2PAInternetService \
-    C2PANativeTestClient \
-    C2PATestClientAIDL \
     GPTEE_Sample_client \
     KmInstallKeybox \
-    PalTest \
-    PktRspTest \
     StoreKeybox \
     TrustedUISampleTAClient \
-    TrustedUISampleTestAIDL \
     adpl \
     adsprpcd \
     aecxsimulator \
@@ -2471,39 +2162,27 @@ PRODUCT_PACKAGES += \
     agmhostless \
     agmplay \
     agmvoiceui \
-    ar_util_in_test_example \
-    athdiag \
     audioadsprpcd \
     aw882xx_cali \
     btconfig \
-    btftmdaemon \
     ccid_daemon_nr \
     cdsprpcd \
-    cnd \
     cnss-daemon \
     cnss_cli \
     cnss_diag \
-    color_sampling_test \
     color_sampling_tool \
     coresight_reset_source_sink \
     cplay \
-    ctlogger \
     ctrlapp_dut \
     dcc_extension \
-    debug-diag \
     diag-router \
-    diag_callback_sample \
-    diag_dci_sample \
-    diag_klog \
     diag_mdlog \
     diag_socket_log \
-    diag_uart_log \
     dlsc \
     dppdaemon \
     drm_sample_app \
     dspservice \
     e_loop \
-    edgnss-daemon \
     engine-service \
     fan_service \
     feature_enabler_client \
@@ -2524,7 +2203,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     dvs-aidl-service \
     qconfigservice \
-    qcrilNrd \
     vendor.dolby.dms.service \
     vendor.dolby.media.c2-default-service-dax \
     vendor.lenovo.hardware.battery-service \
@@ -2560,22 +2238,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.memory.pasrmanager-service \
     vendor.qti.psiclient@1.0-service \
-    ims-dataservice-daemon \
-    ims_rtp_daemon \
-    imsdaemon \
     init.class_main \
     init.crda \
     init.kernel.init_boot-memory \
-    init.kernel.post_boot-kera \
-    init.kernel.post_boot-kera_2_3_1 \
-    init.kernel.post_boot-kera_2_4_0 \
-    init.kernel.post_boot-kera_3_2_1 \
-    init.kernel.post_boot-kera_default_3_4_1 \
     init.kernel.post_boot-memory \
-    init.kernel.post_boot-sun \
-    init.kernel.post_boot-sun_5_2 \
-    init.kernel.post_boot-sun_6_0 \
-    init.kernel.post_boot-sun_default_6_2 \
     init.kernel.post_boot-tuna \
     init.kernel.post_boot-tuna_1_3_1_1 \
     init.kernel.post_boot-tuna_1_3_2_1 \
@@ -2601,14 +2267,9 @@ PRODUCT_PACKAGES += \
     init.qcom.svi.off \
     init.qcom.svi \
     init.qcom.usb \
-    init.qcrild \
     init.qti.display_boot \
-    init.qti.kernel.debug-kera \
-    init.qti.kernel.debug-sun \
     init.qti.kernel.debug-tuna \
     init.qti.kernel.debug \
-    init.qti.kernel.early_debug-kera \
-    init.qti.kernel.early_debug-sun \
     init.qti.kernel.early_debug-tuna \
     init.qti.kernel.early_debug \
     init.qti.kernel \
@@ -2618,23 +2279,16 @@ PRODUCT_PACKAGES += \
     init.qti.write \
     ipacm-diag \
     ipp_key_gen \
-    ipp_test \
     irsc_util \
     ks \
     lenovo.hardware.ai-service \
     loadalgo \
-    loc_launcher \
     loopback \
     lowi-server \
-    mcs_test \
     mlid \
     mm-audio-ftm \
-    modemlog \
-    modemlog_setup \
-    myftm \
     nicmd \
     pd-mapper \
-    pktlogconf \
     pm-proxy \
     pm-service \
     pm_ioctl_app \
@@ -2644,7 +2298,6 @@ PRODUCT_PACKAGES += \
     ppd \
     prop_init \
     qca6234-service \
-    qcc-vendor \
     qdcmss \
     qesdk-manager \
     qesdk-secmanager \
@@ -2652,33 +2305,27 @@ PRODUCT_PACKAGES += \
     qlm-service \
     qmi_test_mt_client_init_instance \
     qmipriod \
-    qms \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
     qsap_dcfd \
-    qsap_location \
     qsap_qapeservice \
     qsap_sensors \
     qsap_voiceui \
     qseecomd \
-    qsh_wifi_test \
     qt-service \
     qti \
     qtigetprop \
     qtisetprop \
-    qttestclient \
     qttestservice \
     qwes_cli \
     qwesd \
     rmt_storage \
     rpmbClient \
-    sec_log_enabler \
     sec_nvm \
     sensors.qti \
     sg_write_buffer \
     shsusrd \
-    slim_daemon \
     smcinvoke_example \
     smcinvoke_skeleton \
     smcinvoke_skeleton_cpp \
@@ -2693,7 +2340,6 @@ PRODUCT_PACKAGES += \
     ssr_setup \
     subsystem_ramdump \
     system_dlkm_modprobe \
-    test_diag \
     tftp_server \
     thermal-engine-v2 \
     time_daemon \
@@ -2702,27 +2348,19 @@ PRODUCT_PACKAGES += \
     tndiag \
     trusteduilistener \
     ubwcconvert \
-    ubwcp_test64 \
-    vendor.dpmd \
     vendor.qti.hardware.soter-provision \
     vendor.qti.qspmhal-service \
     vendor.qti.syshealthmon-service \
     vendor_cmd_tool \
     vendor_modprobe \
     vmmgr \
-    vppcommonlibraryunittest \
-    vpplibraryfunctionaltest \
     vppservice \
-    vppserviceunittest \
     wdsdaemon \
     wfdhdcphalservice \
     wfdvndservice \
     wifidisplayhalservice \
     wifilearner \
     wifisar \
-    xtra-daemon \
-    xtwifi-client \
-    qccsyshal_aidl-service \
     wfdservice64
 
 PRODUCT_PACKAGES += \
