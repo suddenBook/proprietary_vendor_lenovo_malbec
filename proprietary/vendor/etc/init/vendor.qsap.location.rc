@@ -12,4 +12,5 @@ service vendor.qsap.location /vendor/bin/qsap_location
     class main
     user gps
     group gps
+    disabled
 

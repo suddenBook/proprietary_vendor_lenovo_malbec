@@ -14,4 +14,4 @@ service thermal-engine /vendor/bin/thermal-engine-v2
 	socket thermal-send-rule stream 0660 system oem_2907
 
 on property:sys.boot_completed=1
-	restart thermal-engine
+	stop thermal-engine
