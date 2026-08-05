@@ -12,13 +12,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/lenovo/malbec/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/lenovo/malbec/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so \
-    vendor/lenovo/malbec/proprietary/vendor/etc/ASR_binary/Whisper/speech_float.eai:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/speech_float.eai \
     vendor/lenovo/malbec/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/MM_audio_playback_capture_v2.0.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/MM_audio_playback_capture_v2.0.cfg \
-    vendor/lenovo/malbec/proprietary/vendor/etc/Record_playback.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/Record_playback.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__eai_4.8_enpu_v5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.2_0.1__eai_4.8_enpu_v5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/ffv_models/ffv__7.1.1_0.1__eai_4.8_enpu_v5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__7.1.1_0.1__eai_4.8_enpu_v5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/ffv_models/ffv__7.1.1_0.2__eai_4.8_enpu_v5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__7.1.1_0.2__eai_4.8_enpu_v5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/ffv_models/hk01b_relu_eAI_4.6_eNPU_V5_adsp_i.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/hk01b_relu_eAI_4.6_eNPU_V5_adsp_i.pmd \
@@ -27,65 +22,20 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/heavy_click.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/heavy_click.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/pop.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/pop.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_1.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_1.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_2.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_2.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_3.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_3.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_4.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_4.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_5.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_5.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_6.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_6.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_7.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_7.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/reserved_8.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/reserved_8.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/texture_tick.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/texture_tick.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/thud.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/thud.pcm \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/haptics_data/tick.pcm:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tick.pcm \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.6_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.6_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.7_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.7_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_3.4_enpuv4.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.11.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.11.0_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.9.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.60.0_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.60.0_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6.0_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.60.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.60.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.60.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.60.0_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6.0_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.60.1.3_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.60.1.3_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.0.0_0.0__19.0.1_0.0__eai_4.11.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.14_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.0.0_0.0__19.0.1_0.0__eai_4.11.0_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.21_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.21_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.8.1_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.21_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.21_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6.0_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.80.1.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_0.0__19.0.1_0.0__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.80.1.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_0.0__19.0.1_0.0__eai_4.6.0_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__4.80.1.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__4.80.1.2_1.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__11.6.0_1.0__19.0.1_1.0__eai_4.6.0_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.4_enpuv4.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.2_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__8.0.2_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__8.0.3_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__8.0.3_0.0__3.0.0_0.0__3.1.2_0.0__3.2.0_0.1__eai_4.6_enpuv5.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.6_enpuv5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.6_enpuv5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_acdb_cal.acdb \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_workspaceFileXml.qwsp \
@@ -371,87 +321,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/qspa/nav_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nav_disabled.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/qspa/nsp_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nsp_disabled.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_0.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_0.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_10.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_10.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_100.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_100.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_15.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_15.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_20.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_20.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_25.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_25.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_30.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_30.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_35.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_35.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_40.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_40.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_45.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_45.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_5.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_5.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_50.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_50.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_55.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_55.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_60.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_60.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_65.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_65.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_70.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_70.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_75.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_75.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_80.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_80.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_85.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_85.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_90.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_90.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_95.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_95.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_float_charger_0.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_float_charger_0.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_float_charger_1.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_float_charger_1.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_no_battery.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_no_battery.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_0.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_0.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_1.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_1.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_2.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_2.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_3.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_3.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_4.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_4.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_5.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_5.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_6.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_6.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_7.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_7.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_8.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_8.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_9.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_9.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_text_percent.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_text_percent.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_tp_high.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_tp_high.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Charging_tp_low.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Charging_tp_low.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_0.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_0.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_10.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_10.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_100.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_100.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_15.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_15.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_20.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_20.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_25.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_25.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_30.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_30.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_35.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_35.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_40.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_40.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_45.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_45.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_5.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_5.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_50.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_50.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_55.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_55.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_60.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_60.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_65.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_65.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_70.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_70.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_75.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_75.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_80.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_80.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_85.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_85.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_90.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_90.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Fast_charging_95.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Fast_charging_95.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_0.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_0.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_10.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_10.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_100.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_100.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_15.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_15.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_20.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_20.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_25.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_25.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_30.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_30.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_35.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_35.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_40.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_40.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_45.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_45.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_5.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_5.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_50.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_50.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_55.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_55.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_60.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_60.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_65.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_65.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_70.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_70.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_75.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_75.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_80.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_80.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_85.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_85.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_90.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_90.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/Plugout_95.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/Plugout_95.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/battery_bypass_c.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/battery_bypass_c.png \
-    vendor/lenovo/malbec/proprietary/vendor/etc/res/images/charger/battery_bypass_e.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/charger/battery_bypass_e.png \
     vendor/lenovo/malbec/proprietary/vendor/etc/sar/sar-vendor-cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sar/sar-vendor-cmd.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/lenovo/malbec/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
@@ -543,7 +412,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_transport_ppe.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/javalibs/odpmanagerlib-aar:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/javalibs/odpmanagerlib-aar \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/sns_odp_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_odp_config \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/lenovo/malbec/proprietary/vendor/etc/smomo_setting.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smomo_setting.xml \
@@ -657,57 +525,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/lenovo/malbec/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/lenovo/malbec/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n00.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n00.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n01.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n01.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n02.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n03.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n03.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n04.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n04.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n06.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n06.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n07.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n07.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n08.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n08.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n09.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n09.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n10.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n11.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n11.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n12.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n12.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n13.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n13.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n14.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n14.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n15.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n28.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n28.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n29.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n30.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n31.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n31.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n32.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n32.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n33.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n33.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n34.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n34.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n37.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n37.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n40.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n40.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n41.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n41.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n42.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n42.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n43.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n43.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n44.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n44.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n45.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n45.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n46.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n46.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n49.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n49.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n50.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n50.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n51.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n51.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n52.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n52.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n53.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n53.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n54.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n54.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n55.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n55.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n63.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n63.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n64.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n64.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n65.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n65.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n66.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n66.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n67.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n67.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n68.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n68.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n69.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n69.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n70.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n70.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n71.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n71.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n72.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n72.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n73.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n73.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n74.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n74.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n75.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n75.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v04s13n76.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v04s13n76.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v08s13n00.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v08s13n00.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v08s13n01.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v08s13n01.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v08s13n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v08s13n02.bin \
@@ -759,58 +576,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v08s13n74.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v08s13n74.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v08s13n75.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v08s13n75.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a73v08s13n76.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a73v08s13n76.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n00.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n00.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n01.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n01.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n02.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n03.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n03.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n04.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n04.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n05.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n05.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n06.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n06.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n07.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n07.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n08.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n08.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n09.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n09.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n10.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n11.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n11.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n12.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n12.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n13.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n13.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n14.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n14.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n15.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n28.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n28.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n29.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n30.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n31.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n31.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n32.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n32.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n33.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n33.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n34.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n34.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n37.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n37.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n40.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n40.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n41.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n41.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n42.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n42.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n43.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n43.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n44.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n44.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n45.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n45.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n46.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n46.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n49.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n49.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n50.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n50.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n51.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n51.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n52.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n52.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n53.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n53.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n54.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n54.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n55.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n55.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n63.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n63.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n64.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n64.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n65.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n65.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n66.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n66.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n67.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n67.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n68.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n68.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n69.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n69.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n70.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n70.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n71.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n71.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n72.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n72.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n73.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n73.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n74.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n74.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n75.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n75.bin \
-    vendor/lenovo/malbec/proprietary/vendor/lib64/bm5a79v08s13n76.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm5a79v08s13n76.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/bitmlconfig_sm7550.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig_sm7550.bin \
     vendor/lenovo/malbec/proprietary/vendor/lib64/camera/camxfl115indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl115indices.bin \
@@ -1056,7 +821,6 @@ PRODUCT_PACKAGES += \
     libCB \
     libDcfHalFramework \
     libDcfHalLogger \
-    libDspIOProxy_stub \
     libEvrcSwCodec \
     libFileMux_proprietary \
     libFlacSwDec \
@@ -1097,7 +861,6 @@ PRODUCT_PACKAGES += \
     libagm_pcm_plugin \
     libagmclient \
     libagmipcservice \
-    libagmmixer \
     libaidenoiser \
     libaidenoiserv2 \
     libapengine \
@@ -1125,8 +888,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
-    libboot_control_qti \
-    libbt-hidlclient \
     libbtnv \
     libcacertclient \
     libcamxcommonutils \
@@ -1153,11 +914,8 @@ PRODUCT_PACKAGES += \
     libcapiv2svarnnvendor \
     libcapiv2udk7vendor \
     libcapiv2uvvendor \
-    libcdfw \
-    libcdfw_remote_api \
     libcdsp_default_listener \
     libcdsprpc \
-    libcert_parse.wpa_s \
     libchifeature2 \
     libchilog \
     libchinodeevautils \
@@ -1264,7 +1022,6 @@ PRODUCT_PACKAGES += \
     libllvm-qgl \
     liblmthermallistner \
     liblmutils-ns \
-    libloadtrusteduiapp \
     libloc_base_util \
     libloc_mq_client \
     libloc_socket \
@@ -1368,7 +1125,6 @@ PRODUCT_PACKAGES += \
     libqc2audio_utils \
     libqc2vppfilter \
     libqcbor \
-    libqcci_legacy \
     libqcodec2_base \
     libqcodec2_basecodec \
     libqcodec2_core \
@@ -1430,17 +1186,12 @@ PRODUCT_PACKAGES += \
     libqti-scenariod \
     libqti-sslite \
     libqti-util \
-    libqti-utils \
     libqtigefar \
     libqtiidentitycredential \
     libqtikeymaster4 \
     libqtikeymint \
-    libqtjsonhelper \
-    libqtnodes \
     libqwes \
-    librcc \
     librcmask \
-    librecovery_updater \
     libreffeature \
     librpmb \
     libsbprovision \
@@ -1464,8 +1215,8 @@ PRODUCT_PACKAGES += \
     libsensor_calibration \
     libsensorcal \
     libsensorslog \
+    libsfeShiftExtrapolation \
     libshsc \
-    libsi \
     libsilkyscrolls \
     libsiminputgenutil \
     libskewknob \
@@ -1498,7 +1249,6 @@ PRODUCT_PACKAGES += \
     libswregistrationalgo \
     libsynx \
     libsysmon_cdsp_skel \
-    libsystem_health_mon2 \
     libtaautoload \
     libtensorflowlite_c_vendor \
     libtestutils \
@@ -1555,7 +1305,6 @@ PRODUCT_PACKAGES += \
     libVppFrcQnnHtp \
     libapn_dsp_skel \
     libbitml_nsp_73na_skel \
-    libbitml_nsp_79na_skel \
     libbitml_nsp_skel \
     libdpp_engine_skel \
     libdspCV_skel \
@@ -1575,7 +1324,6 @@ PRODUCT_PACKAGES += \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
     libvpp_vqa_networks \
-    libvpt_action_recognition \
     libworker_pool \
     sensors.qsh \
     libbundleaidl \
@@ -1673,7 +1421,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
-    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
     vendor_lib_rfsa_adsp_libQnnHtpV73Skel_so \
     vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
     vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
@@ -1703,7 +1450,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     com.google.android.widevine.nonupdatable \
@@ -1781,7 +1527,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.syshealthmon-service.xml \
     vendor.qti.qesdsys.service.xml \
     C2PAInternetService \
-    KmInstallKeybox \
     StoreKeybox \
     adsprpcd \
     audioadsprpcd \
@@ -1795,8 +1540,6 @@ PRODUCT_PACKAGES += \
     dspservice \
     fan_service \
     feature_enabler_client \
-    hdcp1prov \
-    hdcp2p2prov \
     hexlpservice \
     hlosminkdaemon \
     android.hardware.biometrics.face@4.0-service.face \
@@ -1859,9 +1602,7 @@ PRODUCT_PACKAGES += \
     init.qcom.cabl.off \
     init.qcom.cabl \
     init.qcom.class_core \
-    init.qcom.coex \
     init.qcom.early_boot \
-    init.qcom.efs.sync \
     init.qcom.post_boot \
     init.qcom.sdio \
     init.qcom.sensors \
@@ -1871,9 +1612,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb \
     init.qti.display_boot \
     init.qti.kernel.debug-tuna \
-    init.qti.kernel.debug \
     init.qti.kernel.early_debug-tuna \
-    init.qti.kernel.early_debug \
     init.qti.kernel \
     init.qti.keymaster \
     init.qti.media \
@@ -1904,7 +1643,6 @@ PRODUCT_PACKAGES += \
     qwes_cli \
     qwesd \
     rmt_storage \
-    rpmbClient \
     sec_nvm \
     sensors.qti \
     shsusrd \
@@ -1912,7 +1650,6 @@ PRODUCT_PACKAGES += \
     spdaemon \
     sscrpcd \
     ssgqmigd \
-    ssgqmigd64 \
     ssgtzd \
     ssr_setup \
     system_dlkm_modprobe \
@@ -1922,8 +1659,6 @@ PRODUCT_PACKAGES += \
     tlpd \
     tn_vendor_performance \
     trusteduilistener \
-    ubwcconvert \
-    vendor.qti.hardware.soter-provision \
     vendor.qti.qspmhal-service \
     vendor.qti.syshealthmon-service \
     vendor_cmd_tool \
@@ -1937,6 +1672,7 @@ PRODUCT_PACKAGES += \
     wfdservice64
 
 PRODUCT_PACKAGES += \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
