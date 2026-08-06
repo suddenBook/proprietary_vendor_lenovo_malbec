@@ -804,6 +804,7 @@ service mlid /vendor/bin/mlid
     user gps
     group gps
     socket mlid stream 0666 gps gps
+    disabled
 
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
