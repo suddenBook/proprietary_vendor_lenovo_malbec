@@ -389,6 +389,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/stub_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/stub_audio_policy_configuration.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-audio.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-audio.conf \
+    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-camera.conf \
+    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-floating.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-floating.conf \
+    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-off.conf \
+    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-skynet.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-skynet.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-normal.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
