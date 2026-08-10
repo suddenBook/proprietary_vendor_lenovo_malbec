@@ -24366,6 +24366,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.thermal-service.qti.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "bcs-ranging.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/bcs-ranging.xml",
@@ -24483,6 +24492,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_audio_qti_services.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_audio_qti_services.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_btaudiocoreservices_qti.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_btaudiocoreservices_qti.xml",
@@ -24495,6 +24513,24 @@ prebuilt_etc_xml {
     name: "manifest_identity_credential.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_identity_credential.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "mapper.qti.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/mapper.qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "memtrack_qti.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/memtrack_qti.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -24522,6 +24558,15 @@ prebuilt_etc_xml {
     name: "snapdragon_services.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/snapdragon_services.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "soundtrigger.qti.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/soundtrigger.qti.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -24681,9 +24726,27 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.qti.hardware.display.allocator-service.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.qti.hardware.display.composer-service3_v3.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service3_v3.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.hardware.display.demura-service.xml",
+    owner: "lenovo",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,

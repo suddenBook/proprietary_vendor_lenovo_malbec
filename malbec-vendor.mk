@@ -1358,6 +1358,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
+    android.hardware.thermal-service.qti.xml \
     bcs-ranging.xml \
     bluetooth-finder.xml \
     bluetooth_hci.xml \
@@ -1371,11 +1372,15 @@ PRODUCT_PACKAGES += \
     dvs-aidl-service.xml \
     face-default.xml \
     manifest_afw.xml \
+    manifest_audio_qti_services.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
+    mapper.qti.xml \
+    memtrack_qti.xml \
     qasr_vintf.xml \
     qesdk-manager.xml \
     snapdragon_services.xml \
+    soundtrigger.qti.xml \
     vendor.dolby.media.c2-default-service-dax.xml \
     vendor.lenovo.hardware.battery-service.xml \
     vendor.lenovo.hardware.display-service.xml \
@@ -1393,7 +1398,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.bluetooth.xpanprovider.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
+    vendor.qti.hardware.display.allocator-service.xml \
     vendor.qti.hardware.display.composer-service3_v3.xml \
+    vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.hexlp-service.xml \
     vendor.qti.hardware.lights.service.xml \
