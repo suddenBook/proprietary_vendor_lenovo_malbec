@@ -11004,37 +11004,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdolbyproxyandroid",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdolbyproxyandroid.so",
-            ],
-            shared_libs: [
-                "libdolbyottcameracontrol",
-                "libsensorndkbridge",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdpp_manager",
     owner: "lenovo",
     strip: {

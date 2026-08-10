@@ -433,6 +433,7 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     group nfc
     user system
     oneshot
+    disabled
 
 service iop /system/vendor/bin/iop
     class main
@@ -753,6 +754,7 @@ service ptt_socket_app /system/vendor/bin/ptt_socket_app -d
     group wifi system inet net_admin
     capabilities NET_ADMIN
     oneshot
+    disabled
 
 service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
     user root
@@ -857,11 +859,13 @@ service qvop-daemon /vendor/bin/qvop-daemon
     class late_start
     user system
     group system drmrpc
+    disabled
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
     group system radio
+    disabled
 
 service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/global
     class main
@@ -969,11 +973,13 @@ service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
     class late_start
     user system
     group system
+    disabled
 
 service esepmdaemon /system/vendor/bin/esepmdaemon
     class core
     user system
     group nfc
+    disabled
 
 on charger
     #Enable UFS LPM back
@@ -1031,6 +1037,7 @@ service chre /vendor/bin/chre
     group system
     socket chre seqpacket 0660 root system
     shutdown critical
+    disabled
 
 on property:vendor.chre.enabled=0
    stop chre

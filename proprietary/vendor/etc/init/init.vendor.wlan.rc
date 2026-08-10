@@ -14,3 +14,4 @@ service wifi_qos_daemon /vendor/bin/wifi_qos_daemon
     group wifi inet net_admin oem_2912 system
     capabilities NET_ADMIN
     oneshot
+    disabled

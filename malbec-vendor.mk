@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/facedetection/bias.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/bias.dat \
     vendor/lenovo/malbec/proprietary/vendor/etc/eva/facedetection/weight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/weight.dat \
@@ -884,7 +883,6 @@ PRODUCT_PACKAGES += \
     libdolbydecoderprocessor \
     libdolbyeglcore \
     libdolbyottcameracontrol \
-    libdolbyproxyandroid \
     libdpp_manager \
     libdpps \
     libdrmfs \
