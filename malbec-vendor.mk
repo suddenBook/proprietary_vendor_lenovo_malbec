@@ -12,6 +12,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/lenovo/malbec/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/lenovo/malbec/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/ffv_models/ffv__7.1.1_0.1__eai_4.8_enpu_v5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__7.1.1_0.1__eai_4.8_enpu_v5.pmd \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/ffv_models/ffv__7.1.1_0.2__eai_4.8_enpu_v5.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__7.1.1_0.2__eai_4.8_enpu_v5.pmd \
