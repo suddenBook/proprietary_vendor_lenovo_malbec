@@ -518,7 +518,6 @@ service thermal-switch-engine /vendor/bin/thermal-engine-v2 -c /vendor/etc/therm
     user root
     group root system
     disabled
-    oneshot   
     
 on property:vendor.thermal.mode=*
    stop thermal-engine
