@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
+    vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.thermal-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal-service.qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
@@ -1409,6 +1410,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
+    android.hardware.thermal-service.qti.xml \
     bcs-ranging.xml \
     bluetooth-finder.xml \
     bluetooth_hci.xml \
@@ -1487,6 +1489,7 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service-qti \
     android.hardware.power-service \
     android.hardware.security.keymint-service-qti \
+    android.hardware.thermal-service.qti \
     dvs-aidl-service \
     qconfigservice \
     vendor.dolby.dms.service \
