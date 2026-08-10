@@ -220,13 +220,17 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_tuna_v0.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_performance_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_tuna_v1.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_tuna_v0.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_tuna_v1.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_tuna_v0.xml \
+    vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_tuna_v1.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_sun/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_sun/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_tuna_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v0/video_system_specs.json \
+    vendor/lenovo/malbec/proprietary/vendor/etc/media_tuna_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v1/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
@@ -392,9 +396,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-audio.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-audio.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-camera.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-floating.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-floating.conf \
+    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-normal.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-off.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-skynet.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-skynet.conf \
-    vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine-malbec-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-malbec-normal.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lenovo/malbec/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
