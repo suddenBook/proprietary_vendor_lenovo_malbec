@@ -6661,76 +6661,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.bluetooth_audio@2.0-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "vendor.qti.hardware.bluetooth_audio@2.0",
-                "libbase",
-                "libbluetooth_audio_session_qti",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.bluetooth_audio@2.1-impl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "libbluetooth_audio_session_qti_2_1",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "vendor.qti.hardware.bluetooth_audio@2.1",
-                "vendor.qti.hardware.bluetooth_audio@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.bluetooth_sar@aidl-impl",
     owner: "lenovo",
     strip: {
@@ -25099,32 +25029,6 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fan_service",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/fan_service",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libc++",
                 "libm",
                 "libdl",
             ],

@@ -34,10 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308hs/QRD_tuna1_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308yc/QRD_tuna2_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308yc/QRD_tuna2_acdb_cal.acdb \
     vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2308yc/QRD_tuna2_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2308yc/QRD_tuna2_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418hs/QRD_tuna3_workspaceFileXml.qwsp \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_acdb_cal.acdb \
-    vendor/lenovo/malbec/proprietary/vendor/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/tuna_qrd_2418yc/QRD_tuna4_workspaceFileXml.qwsp \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
     vendor/lenovo/malbec/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
@@ -77,7 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/graphics_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/graphics_alignments.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/moto_stc_profile.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/moto_stc_profile.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_boe_nt36536e_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_boe_nt36536e_144hz_vid.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_csot_af_nt36536_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_csot_af_nt36536_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/qdcm_calib_data_csot_nt36536_144hz_vid.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_csot_nt36536_144hz_vid.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
@@ -133,7 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/init_fan_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_fan_service.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/prop_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/prop_init.rc \
@@ -230,7 +224,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_tuna_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_tuna_v0.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_profiles_tuna_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_tuna_v1.xml \
-    vendor/lenovo/malbec/proprietary/vendor/etc/media_sun/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_sun/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_tuna_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v0/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/media_tuna_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v1/video_system_specs.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
@@ -289,15 +282,12 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_dynamic_sensors.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_dynamic_sensors_template.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_dynamic_sensors_template.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_gs6155.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_gs6155.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_icm4x6xx_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_icm4x6xx_0_factory.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_icm4x6xx_0_factory.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_irq.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_lsm6dsv_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_lsm6dsv_0_factory.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_lsm6dsv_0_factory.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_power_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_qrd_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_qrd_default_sensors.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_qsh_ble_0.json \
-    vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/bonito_stk6b9x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bonito_stk6b9x_0.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/lenovo/malbec/proprietary/vendor/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common.json \
@@ -454,7 +444,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/firmware/gen80000_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80000_zap.mbn \
     vendor/lenovo/malbec/proprietary/vendor/firmware/gen80600_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen80600_gmu.bin \
     vendor/lenovo/malbec/proprietary/vendor/firmware/vpu30_2v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_2v.mbn \
-    vendor/lenovo/malbec/proprietary/vendor/firmware/vpu30_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_2v_unsigned.mbn \
     vendor/lenovo/malbec/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/lenovo/malbec/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/lenovo/malbec/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
@@ -739,8 +728,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth.finder-impl-qti \
     vendor.qti.hardware.bluetooth.xpanprovider-impl-qti \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
@@ -1425,7 +1412,6 @@ PRODUCT_PACKAGES += \
     cnss_diag \
     diag-router \
     dspservice \
-    fan_service \
     feature_enabler_client \
     hexlpservice \
     hlosminkdaemon \
