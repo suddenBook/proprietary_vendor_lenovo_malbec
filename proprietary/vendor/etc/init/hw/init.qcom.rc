@@ -849,8 +849,8 @@ on property:sys.boot_completed=1
     start qcom-post-boot
 
 # TN modified by ji.yang/860665 20251218 CR/MALBECW-975
-on property:sys.boot_completed=1 && property:ro.build.type=userdebug
-    start qti-testscripts
+# (the `start qti-testscripts` this trigger existed for was removed: the
+#  script it runs, /product/etc/init.qcom.testscripts.sh, is in no image)
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
