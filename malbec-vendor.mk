@@ -6,12 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/malbec
 
 PRODUCT_COPY_FILES += \
-    vendor/lenovo/malbec/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/lenovo/malbec/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/lenovo/malbec/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
-    vendor/lenovo/malbec/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/lenovo/malbec/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
-    vendor/lenovo/malbec/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/lenovo/malbec/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -1283,30 +1279,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libhme_dsp_skel_so \
     vendor_lib_rfsa_adsp_libmctfengine_skel_so \
     vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
-    libmmosal \
-    libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
     libqesdk_ndk_platform.qti \
-    libwfdavenhancements \
-    libwfdclient \
-    libwfdcommonutils \
-    libwfdconfigutils \
-    libwfddisplayconfig \
-    libwfdmminterface \
-    libwfdmmsink \
-    libwfdmmsrc_system \
-    libwfdnative \
-    libwfdrtsp \
-    libwfdservice \
-    libwfdsinksm \
-    libwfduibcinterface \
-    libwfduibcsink \
-    libwfduibcsinkinterface \
-    libwfduibcsrc \
-    libwfduibcsrcinterface \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     com.google.android.widevine.nonupdatable \
     CACertService \
     TimeService \
@@ -1315,8 +1288,6 @@ PRODUCT_PACKAGES += \
     pasrservice \
     FrameworksUtilsSysService \
     PowerOffAlarm \
-    WfdService \
-    WfdCommon \
     vendor.qti.hardware.alarm-V1.0-java \
     android.hardware.drm-service.xml \
     android.hardware.security.keymint-service-qti.xml \
@@ -1496,11 +1467,9 @@ PRODUCT_PACKAGES += \
     wfdvndservice \
     wifidisplayhalservice \
     wifilearner \
-    wifisar \
-    wfdservice64
+    wifisar
 
 PRODUCT_PACKAGES += \
-    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
