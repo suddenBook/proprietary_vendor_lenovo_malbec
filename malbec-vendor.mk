@@ -98,7 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/malbec/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/lenovo/malbec/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/lenovo/malbec/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
-    vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.biometrics.face@4.0-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face@4.0-service.face.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/lenovo/malbec/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
@@ -789,9 +788,6 @@ PRODUCT_PACKAGES += \
     libar-gpr \
     libar-gsl \
     libar-pal \
-    libarcsoft_face_biometric \
-    libarcsoft_face_mink \
-    libarcsoft_faceid \
     libarmemlog \
     libats \
     libaudio_log_utils \
@@ -801,7 +797,6 @@ PRODUCT_PACKAGES += \
     libbacklight-calib \
     libbase64 \
     libbatterylistener \
-    libbiometricsface_ca.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl \
@@ -883,7 +878,6 @@ PRODUCT_PACKAGES += \
     libeepromcutter \
     libeva \
     libeva_util \
-    libfaceid_ca_proxy.arcsoft \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
@@ -966,7 +960,6 @@ PRODUCT_PACKAGES += \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
-    libmpbase \
     libnative-api \
     libnbaio_mono \
     libnicm \
@@ -1355,7 +1348,6 @@ PRODUCT_PACKAGES += \
     cacert-saidl.xml \
     dms-service.xml \
     dvs-aidl-service.xml \
-    face-default.xml \
     manifest_afw.xml \
     manifest_audio_qti_services.xml \
     manifest_btaudiocoreservices_qti.xml \
@@ -1415,7 +1407,6 @@ PRODUCT_PACKAGES += \
     feature_enabler_client \
     hexlpservice \
     hlosminkdaemon \
-    android.hardware.biometrics.face@4.0-service.face \
     android.hardware.bluetooth@aidl-service-qti \
     android.hardware.gatekeeper-service-qti \
     android.hardware.identity-service-qti \
