@@ -21754,32 +21754,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.diaghal-V1-ndk",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.diaghal-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.ListenSoundModelAidl-V1-ndk",
     owner: "lenovo",
     strip: {
@@ -24416,15 +24390,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.diag.hal.service.xml",
-    owner: "lenovo",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.hardware.alarm.xml",
     owner: "lenovo",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.alarm.xml",
@@ -24792,37 +24757,6 @@ cc_prebuilt_binary {
                 "libcld80211",
                 "libwifi-hal-ctrl",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "diag-router",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/diag-router",
-            ],
-            shared_libs: [
-                "libutils",
-                "libqrtr",
-                "liblog",
-                "libcutils",
-                "libavservices_minijail",
-                "libbinder_ndk",
-                "vendor.qti.diaghal-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26896,47 +26830,6 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "vendor.qti.qesdsys-V3-ndk",
                 "libavservices_minijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "qguard",
-    owner: "lenovo",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qguard",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libjsoncpp",
-                "libprocessgroup",
-                "libutils",
-                "libbinder",
-                "libbinder_ndk",
-                "libui",
-                "libhidlbase",
-                "libdisplayconfig.qti",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common@1.2",
-                "vendor.qti.hardware.display.config-V12-ndk",
-                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
